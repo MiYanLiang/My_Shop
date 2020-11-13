@@ -31,13 +31,15 @@ public class BackMove_Phone : MonoBehaviour
     }
     void Update()
     {
-        if (IsNeedMove == false)
-        {
+        if (UIControllerCS.instance.isOpenBackPack)
             return;
-        }
+
+        if (!IsNeedMove)
+            return;
+
         MoveFunction();
         var x = transform.position.x;
-        x = x - vecPos.x;//向量偏移
+        x = x + vecPos.x;//向量偏移
         x = Mathf.Clamp(x, -420, 1500);
         //x = Mathf.Clamp(x, -58, 58);
 

@@ -8,21 +8,15 @@ public class BackMove_PC : MonoBehaviour
     private Vector2 second = Vector2.zero;//鼠标第二次位置（拖拽位置）
     private Vector3 vecPos = Vector3.zero;
     private bool IsNeedMove = false;//是否需要移动
-    void Awake()
-    {
-        //Debug.Log("Scenes Running!!!");
-    }
 
     void Start()
     {
         //初始化第一次下落点
         first.x = transform.position.x;
         first.y = transform.position.y;
-        //Debug.Log("First.x:" + first.x + "...First.y:" + first.y);
         //获取背景图片的尺寸
         string imageWidth = gameObject.GetComponent<RectTransform>().rect.width.ToString();
         string imageHeight = gameObject.GetComponent<RectTransform>().rect.height.ToString();
-        //Debug.Log("imageWidth:" + imageWidth + "...imageHeight:" + imageHeight);
     }
     public void OnGUI()
     {
@@ -46,18 +40,18 @@ public class BackMove_PC : MonoBehaviour
         {
             IsNeedMove = false;
         }
-
     }
 
     void Update()
     {
-        if (IsNeedMove == false)
-        {
+        if (UIControllerCS.instance.isOpenBackPack)
             return;
-        }
+
+        if (!IsNeedMove)
+            return;
 
         var x = transform.position.x;
-        x = x - vecPos.x;//向量偏移
+        x = x + vecPos.x;//向量偏移
         x = Mathf.Clamp(x, -420, 1500);
         //x = Mathf.Clamp(x, -58, 58);
 
