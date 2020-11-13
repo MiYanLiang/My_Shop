@@ -5,7 +5,104 @@
 			"DrinksName": "可口可乐",
 			"Date_in_produced": "2020_01_20",
 			"Shelf_life": "3",
-			"Purchasing_price": "1.0"
+			"Purchasing_price": "1.0",
+			"Image_id": "30001"
+		},
+		{
+			"DrinksId": "2",
+			"DrinksName": "椰树牌椰汁",
+			"Date_in_produced": "2020_01_21",
+			"Shelf_life": "4",
+			"Purchasing_price": "2.0",
+			"Image_id": "30002"
+		},
+		{
+			"DrinksId": "3",
+			"DrinksName": "健力宝",
+			"Date_in_produced": "2020_01_22",
+			"Shelf_life": "5",
+			"Purchasing_price": "3.0",
+			"Image_id": "30003"
+		},
+		{
+			"DrinksId": "4",
+			"DrinksName": "旭日升",
+			"Date_in_produced": "2020_01_23",
+			"Shelf_life": "6",
+			"Purchasing_price": "4.0",
+			"Image_id": "30004"
+		},
+		{
+			"DrinksId": "5",
+			"DrinksName": "老酸奶",
+			"Date_in_produced": "2020_01_24",
+			"Shelf_life": "7",
+			"Purchasing_price": "2.0",
+			"Image_id": "30005"
+		},
+		{
+			"DrinksId": "6",
+			"DrinksName": "麦乳精",
+			"Date_in_produced": "2020_01_25",
+			"Shelf_life": "8",
+			"Purchasing_price": "2.0",
+			"Image_id": "30006"
+		},
+		{
+			"DrinksId": "7",
+			"DrinksName": "非常可乐",
+			"Date_in_produced": "2020_01_26",
+			"Shelf_life": "9",
+			"Purchasing_price": "3.0",
+			"Image_id": "30007"
+		},
+		{
+			"DrinksId": "8",
+			"DrinksName": "乐百氏AD钙奶",
+			"Date_in_produced": "2020_01_27",
+			"Shelf_life": "10",
+			"Purchasing_price": "3.0",
+			"Image_id": "30008"
+		},
+		{
+			"DrinksId": "9",
+			"DrinksName": "雀巢冰爽茶",
+			"Date_in_produced": "2020_02_01",
+			"Shelf_life": "11",
+			"Purchasing_price": "2.0",
+			"Image_id": "30009"
+		},
+		{
+			"DrinksId": "10",
+			"DrinksName": "亚洲汽水",
+			"Date_in_produced": "2020_02_02",
+			"Shelf_life": "12",
+			"Purchasing_price": "2.0",
+			"Image_id": "30010"
+		},
+		{
+			"DrinksId": "11",
+			"DrinksName": "高乐高",
+			"Date_in_produced": "2020_02_03",
+			"Shelf_life": "13",
+			"Purchasing_price": "3.0",
+			"Image_id": "30011"
+		},
+		{
+			"DrinksId": "12",
+			"DrinksName": "哇哈哈AD钙奶",
+			"Date_in_produced": "2020_02_04",
+			"Shelf_life": "14",
+			"Purchasing_price": "3.0",
+			"Image_id": "30012"
+		},
+		{
+			"DrinksId": "13",
+			"DrinksName": "旺仔牛奶",
+			"Date_in_produced": "2020_02_05",
+			"Shelf_life": "15",
+			"Purchasing_price": "2.0",
+			"Image_id": "30013"
 		}
 	]
 }

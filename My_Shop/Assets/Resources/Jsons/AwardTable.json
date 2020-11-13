@@ -6,7 +6,35 @@
 			"One_probability": "5",
 			"Two_probability": "10",
 			"Three_probability": "15",
-			"Purchasing_price": "1.0"
+			"Purchasing_price": "1.0",
+			"Image_id": "60001"
+		},
+		{
+			"AwardId": "2",
+			"AwardName": "玩具奖盘_风铃",
+			"One_probability": "5",
+			"Two_probability": "10",
+			"Three_probability": "15",
+			"Purchasing_price": "12.0",
+			"Image_id": "60002"
+		},
+		{
+			"AwardId": "3",
+			"AwardName": "玩具奖盘_火影刃具",
+			"One_probability": "5",
+			"Two_probability": "10",
+			"Three_probability": "15",
+			"Purchasing_price": "13.0",
+			"Image_id": "60003"
+		},
+		{
+			"AwardId": "4",
+			"AwardName": "玩具奖盘_兵器",
+			"One_probability": "5",
+			"Two_probability": "10",
+			"Three_probability": "15",
+			"Purchasing_price": "14.0",
+			"Image_id": "60004"
 		}
 	]
 }

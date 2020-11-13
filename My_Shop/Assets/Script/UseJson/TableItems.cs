@@ -18,6 +18,7 @@ public class SnacksTableItem
     public string Date_in_produced { get; set; }
     public int Shelf_life { get; set; }
     public float Purchasing_price { get; set; }
+    public int Image_id { get; set; }
 }
 public class DrinksTableItem
 {
@@ -26,6 +27,7 @@ public class DrinksTableItem
     public string Date_in_produced { get; set; }
     public int Shelf_life { get; set; }
     public float Purchasing_price { get; set; }
+    public int Image_id { get; set; }
 }
 public class IceTableItem
 {
@@ -34,6 +36,7 @@ public class IceTableItem
     public string Date_in_produced { get; set; }
     public int Shelf_life { get; set; }
     public float Purchasing_price { get; set; }
+    public int Image_id { get; set; }
 }
 public class SogoTableItem
 {
@@ -42,6 +45,7 @@ public class SogoTableItem
     public string Date_in_produced { get; set; }
     public int Shelf_life { get; set; }
     public float Purchasing_price { get; set; }
+    public int Image_id { get; set; }
 }
 public class AwardTableItem
 {
@@ -51,4 +55,5 @@ public class AwardTableItem
     public int Two_probability { get; set; }
     public int Three_probability { get; set; }
     public float Purchasing_price { get; set; }
+    public int Image_id { get; set; }
 }
