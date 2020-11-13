@@ -1,0 +1,11 @@
+{
+	"DrinksTable": [
+		{
+			"DrinksId": "1",
+			"DrinksName": "可口可乐",
+			"Date_in_produced": "2020_01_20",
+			"Shelf_life": "3",
+			"Purchasing_price": "1.0"
+		}
+	]
+}

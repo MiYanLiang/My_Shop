@@ -1,0 +1,18 @@
+{
+	"SogoTable": [
+		{
+			"SogoId": "1",
+			"SogoName": "充电器",
+			"Date_in_produced": "",
+			"Shelf_life": "0",
+			"Purchasing_price": "1.0"
+		},
+		{
+			"SogoId": "2",
+			"SogoName": "面条",
+			"Date_in_produced": "2020_01_20",
+			"Shelf_life": "1",
+			"Purchasing_price": "2.0"
+		}
+	]
+}

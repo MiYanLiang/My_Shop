@@ -1,0 +1,130 @@
+{
+	"ShopTable": [
+		{
+			"TableId": "1",
+			"TableName1": "OTC",
+			"TableName2": "柜台交易",
+			"TableDescribe": "里面包含了所有的柜台及市场消息"
+		},
+		{
+			"TableId": "2",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "3",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "4",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "5",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "6",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "7",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "8",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "9",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "10",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "11",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "12",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "13",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "14",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "15",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "16",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "17",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "18",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "19",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "20",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		},
+		{
+			"TableId": "21",
+			"TableName1": "",
+			"TableName2": "",
+			"TableDescribe": ""
+		}
+	]
+}
