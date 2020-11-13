@@ -1,0 +1,328 @@
+
+2020/11/13 21:07:11__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:07:11__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:262)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:220)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:09:32__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:09:32__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:09:32__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:09:46__DebugLog__删除存档
+UnityEngine.Debug:Log(Object)
+LoadSaveData:DeleteAllSaveData() (at Assets/Script/SaveData/LoadSaveData.cs:59)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/13 21:09:46__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:09:46__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:09:46__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:263)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:220)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:09:46__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:263)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:220)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:10:16__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:10:16__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:10:16__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:10:23__DebugException__NullReferenceException: Object reference not set to an instance of an object
+UIControllerCS.OpenBackPackOnClick (System.Int32 indexType) (at Assets/Script/UIScripts/UIControllerCS.cs:92)
+UnityEngine.Events.InvokableCall`1[T1].Invoke (T1 args0) (at D:/unity/Runtime/Export/UnityEvent/UnityEvent.cs:207)
+UnityEngine.Events.CachedInvokableCall`1[T].Invoke (System.Object[] args) (at D:/unity/Runtime/Export/UnityEvent/UnityEvent.cs:345)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent/UnityEvent/UnityEvent_0.cs:70)
+UnityEngine.UI.Button.Press () (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs:68)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs:110)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/13 21:13:04__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:13:04__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:13:04__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:13:06__DebugLog__删除存档
+UnityEngine.Debug:Log(Object)
+LoadSaveData:DeleteAllSaveData() (at Assets/Script/SaveData/LoadSaveData.cs:59)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/13 21:13:06__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:13:06__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:13:06__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:263)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:220)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:13:06__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:263)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:220)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:13:12__DebugLog__删除存档
+UnityEngine.Debug:Log(Object)
+LoadSaveData:DeleteAllSaveData() (at Assets/Script/SaveData/LoadSaveData.cs:59)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/13 21:13:12__DebugLog__删除存档
+UnityEngine.Debug:Log(Object)
+LoadSaveData:DeleteAllSaveData() (at Assets/Script/SaveData/LoadSaveData.cs:59)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/13 21:13:12__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:13:12__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:13:12__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:13:12__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:263)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:220)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:13:12__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:263)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:220)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:13:12__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:263)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:220)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:15:49__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:15:49__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:15:49__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:16:02__DebugException__NullReferenceException: Object reference not set to an instance of an object
+UIControllerCS.OpenBackPackOnClick (System.Int32 indexType) (at Assets/Script/UIScripts/UIControllerCS.cs:92)
+UnityEngine.Events.InvokableCall`1[T1].Invoke (T1 args0) (at D:/unity/Runtime/Export/UnityEvent/UnityEvent.cs:207)
+UnityEngine.Events.CachedInvokableCall`1[T].Invoke (System.Object[] args) (at D:/unity/Runtime/Export/UnityEvent/UnityEvent.cs:345)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent/UnityEvent/UnityEvent_0.cs:70)
+UnityEngine.UI.Button.Press () (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs:68)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs:110)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/13 21:16:22__DebugLog__删除存档
+UnityEngine.Debug:Log(Object)
+LoadSaveData:DeleteAllSaveData() (at Assets/Script/SaveData/LoadSaveData.cs:59)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/13 21:16:22__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:16:22__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:16:22__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:263)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:220)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:16:22__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:263)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:220)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:17:33__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:17:33__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:17:33__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:17:35__DebugLog__删除存档
+UnityEngine.Debug:Log(Object)
+LoadSaveData:DeleteAllSaveData() (at Assets/Script/SaveData/LoadSaveData.cs:59)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/13 21:17:35__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:17:35__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:17:35__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:265)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:220)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:17:35__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:265)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:220)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:17:40__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:17:40__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:17:40__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:66)
+
+2020/11/13 21:19:08__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:19:09__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:67)
+
+2020/11/13 21:19:09__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:67)
+
+2020/11/13 21:20:08__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:20:08__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:67)
+
+2020/11/13 21:20:08__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:67)
+
+2020/11/13 21:21:21__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/13 21:21:21__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:67)
+
+2020/11/13 21:21:21__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:67)
