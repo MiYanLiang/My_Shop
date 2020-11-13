@@ -1,0 +1,29 @@
+{
+	"OTCTable": [
+		{
+			"OTCid": "1",
+			"OTCname": "Refrigerator",
+			"OTCdescribe": "冰箱，内含雪糕"
+		},
+		{
+			"OTCid": "2",
+			"OTCname": "Freezer",
+			"OTCdescribe": "冰柜，内含饮料及酸奶"
+		},
+		{
+			"OTCid": "3",
+			"OTCname": "GoodsShelf",
+			"OTCdescribe": "货架，内含日用百货及玩具"
+		},
+		{
+			"OTCid": "4",
+			"OTCname": "Counter",
+			"OTCdescribe": "柜台，内含零食"
+		},
+		{
+			"OTCid": "5",
+			"OTCname": "GoodsWall",
+			"OTCdescribe": "货壁，内含抽奖卷"
+		}
+	]
+}

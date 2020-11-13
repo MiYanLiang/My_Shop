@@ -1,0 +1,11 @@
+{
+	"SnacksTable": [
+		{
+			"SnacksId": "1",
+			"SnacksName": "上好佳薯片",
+			"Date_in_produced": "2020_01_20",
+			"Shelf_life": "3",
+			"Purchasing_price": "1.0"
+		}
+	]
+}

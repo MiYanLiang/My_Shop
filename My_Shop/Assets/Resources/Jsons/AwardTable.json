@@ -1,0 +1,12 @@
+{
+	"AwardTable": [
+		{
+			"AwardId": "1",
+			"AwardName": "现金奖盘",
+			"One_probability": "5",
+			"Two_probability": "10",
+			"Three_probability": "15",
+			"Purchasing_price": "1.0"
+		}
+	]
+}
