@@ -18,7 +18,8 @@ def export_json(xls, fn):
                 ss += "\t\t\t\"One_probability\": \"" + conv_int(c[ri.Next()]) + "\",\n"
                 ss += "\t\t\t\"Two_probability\": \"" + conv_int(c[ri.Next()]) + "\",\n"
                 ss += "\t\t\t\"Three_probability\": \"" + conv_int(c[ri.Next()]) + "\",\n"
-                ss += "\t\t\t\"Purchasing_price\": \"" + conv_flo(c[ri.Next()]) + "\"\n"
+                ss += "\t\t\t\"Purchasing_price\": \"" + conv_flo(c[ri.Next()]) + "\",\n"
+                ss += "\t\t\t\"Image_id\": \"" + conv_int(c[ri.Next()]) + "\"\n"
                 ss += "\t\t},\n"
                 s += ss
             s = s[:-2]

@@ -2,10 +2,147 @@
 	"SnacksTable": [
 		{
 			"SnacksId": "1",
-			"SnacksName": "上好佳薯片",
+			"SnacksName": "唐僧肉",
 			"Date_in_produced": "2020_01_20",
 			"Shelf_life": "3",
-			"Purchasing_price": "1.0"
+			"Purchasing_price": "1.1",
+			"Image_id": "20001"
+		},
+		{
+			"SnacksId": "2",
+			"SnacksName": "口哨糖",
+			"Date_in_produced": "2020_01_21",
+			"Shelf_life": "4",
+			"Purchasing_price": "3.0",
+			"Image_id": "20002"
+		},
+		{
+			"SnacksId": "3",
+			"SnacksName": "吸管糖",
+			"Date_in_produced": "2020_01_22",
+			"Shelf_life": "5",
+			"Purchasing_price": "2.0",
+			"Image_id": "20003"
+		},
+		{
+			"SnacksId": "4",
+			"SnacksName": "小浣熊干脆面",
+			"Date_in_produced": "2020_01_23",
+			"Shelf_life": "6",
+			"Purchasing_price": "5.0",
+			"Image_id": "20004"
+		},
+		{
+			"SnacksId": "5",
+			"SnacksName": "旺仔小馒头",
+			"Date_in_produced": "2020_01_24",
+			"Shelf_life": "7",
+			"Purchasing_price": "4.0",
+			"Image_id": "20005"
+		},
+		{
+			"SnacksId": "6",
+			"SnacksName": "咪咪虾条",
+			"Date_in_produced": "2020_01_25",
+			"Shelf_life": "8",
+			"Purchasing_price": "1.0",
+			"Image_id": "20006"
+		},
+		{
+			"SnacksId": "7",
+			"SnacksName": "西瓜泡泡糖",
+			"Date_in_produced": "2020_01_26",
+			"Shelf_life": "9",
+			"Purchasing_price": "2.0",
+			"Image_id": "20007"
+		},
+		{
+			"SnacksId": "8",
+			"SnacksName": "小当家方便面",
+			"Date_in_produced": "2020_01_27",
+			"Shelf_life": "10",
+			"Purchasing_price": "0.5",
+			"Image_id": "20008"
+		},
+		{
+			"SnacksId": "9",
+			"SnacksName": "大白兔奶糖",
+			"Date_in_produced": "2020_01_28",
+			"Shelf_life": "11",
+			"Purchasing_price": "3.0",
+			"Image_id": "20009"
+		},
+		{
+			"SnacksId": "10",
+			"SnacksName": "字母饼干",
+			"Date_in_produced": "2020_01_29",
+			"Shelf_life": "12",
+			"Purchasing_price": "2.5",
+			"Image_id": "20010"
+		},
+		{
+			"SnacksId": "11",
+			"SnacksName": "猪油糖",
+			"Date_in_produced": "2020_01_30",
+			"Shelf_life": "13",
+			"Purchasing_price": "13.0",
+			"Image_id": "20011"
+		},
+		{
+			"SnacksId": "12",
+			"SnacksName": "康康饼",
+			"Date_in_produced": "2020_02_1",
+			"Shelf_life": "14",
+			"Purchasing_price": "23.0",
+			"Image_id": "20012"
+		},
+		{
+			"SnacksId": "13",
+			"SnacksName": "花生软糖",
+			"Date_in_produced": "2020_02_2",
+			"Shelf_life": "15",
+			"Purchasing_price": "1.0",
+			"Image_id": "20013"
+		},
+		{
+			"SnacksId": "14",
+			"SnacksName": "无花果",
+			"Date_in_produced": "2020_02_3",
+			"Shelf_life": "16",
+			"Purchasing_price": "2.0",
+			"Image_id": "20014"
+		},
+		{
+			"SnacksId": "15",
+			"SnacksName": "润喉糖",
+			"Date_in_produced": "2020_02_4",
+			"Shelf_life": "17",
+			"Purchasing_price": "3.0",
+			"Image_id": "20015"
+		},
+		{
+			"SnacksId": "16",
+			"SnacksName": "华丰伊面",
+			"Date_in_produced": "2020_02_5",
+			"Shelf_life": "18",
+			"Purchasing_price": "4.0",
+			"Image_id": "20016"
+		},
+		{
+			"SnacksId": "17",
+			"SnacksName": "橘子糖",
+			"Date_in_produced": "2020_02_6",
+			"Shelf_life": "19",
+			"Purchasing_price": "6.0",
+			"Image_id": "20017"
+		},
+		{
+			"SnacksId": "18",
+			"SnacksName": "大大泡泡糖",
+			"Date_in_produced": "2020_02_7",
+			"Shelf_life": "20",
+			"Purchasing_price": "7.0",
+			"Image_id": "20018"
 		}
 	]
 }
