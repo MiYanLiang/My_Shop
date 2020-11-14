@@ -17,6 +17,8 @@ public class UIControllerCS : MonoBehaviour
     GameObject backPackContentObj;  //背包obj
     [SerializeField]
     Text woodInfoBackPackText;
+    [SerializeField]
+    GameObject catLevelObj;  //猫咪升级面板
 
     [SerializeField]
     Text playerNameText;
@@ -27,10 +29,11 @@ public class UIControllerCS : MonoBehaviour
     [SerializeField]
     Text levelText;
 
-    string[] backPackTitleNameStr = new string[3] {
+    string[] backPackTitleNameStr = new string[4] {
         "冰箱",
         "柜台",
-        "冰柜"
+        "冰柜",
+        "货架"
     };
 
     private void Awake()
@@ -80,7 +83,7 @@ public class UIControllerCS : MonoBehaviour
     /// <summary>
     /// 打开背包
     /// </summary>
-    /// <param name="indexType">0，冰箱；1，；2，；</param>
+    /// <param name="indexType">0，冰箱；1，；2，3；</param>
     public void OpenBackPackOnClick(int indexType)
     {
         if (isOpenBackPack)
@@ -256,5 +259,29 @@ public class UIControllerCS : MonoBehaviour
         {
             woodInfoMarketText.text = woodName;
         });
+    }
+
+    /// <summary>
+    /// 打开猫咪升级面板
+    /// </summary>
+    public void OpenCatLevelOnClick()
+    {
+        catLevelObj.SetActive(true);
+        isOpenBackPack = true;
+
+    }
+
+    /// <summary>
+    /// 关闭猫咪升级面板
+    /// </summary>
+    public void CloseCatLevelOnClick()
+    {
+        if (!isOpenBackPack)
+        {
+            return;
+        }
+        catLevelObj.SetActive(false);
+        isOpenBackPack = false;
+
     }
 }
