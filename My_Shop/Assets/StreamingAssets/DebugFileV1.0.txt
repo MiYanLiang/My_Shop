@@ -1546,3 +1546,24 @@ UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:69)
 UnityEngine.MonoBehaviour:print(Object)
 UIControllerCS:BuyInCarOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:310)
 UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/14 17:56:26__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:88)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:149)
+
+2020/11/14 17:56:26__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:69)
+
+2020/11/14 17:56:26__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:69)
+
+2020/11/14 17:56:34__DebugLog__...6
+UnityEngine.MonoBehaviour:print(Object)
+UIControllerCS:BuyInCarOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:310)
+UnityEngine.EventSystems.EventSystem:Update()
