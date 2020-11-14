@@ -17,8 +17,7 @@ public class UIControllerCS : MonoBehaviour
     GameObject backPackContentObj;  //背包obj
     [SerializeField]
     Text woodInfoBackPackText;
-    [SerializeField]
-    GameObject catLevelObj;  //猫咪升级面板
+
 
     [SerializeField]
     Text playerNameText;
@@ -231,6 +230,7 @@ public class UIControllerCS : MonoBehaviour
                 break;
         }
         marketWinObj.SetActive(true);
+        InitUIForBuyGoods();
         isOpenBackPack = true;
     }
 
@@ -261,6 +261,9 @@ public class UIControllerCS : MonoBehaviour
         });
     }
 
+
+    [SerializeField]
+    GameObject catLevelObj;  //猫咪升级面板
     /// <summary>
     /// 打开猫咪升级面板
     /// </summary>
@@ -282,6 +285,56 @@ public class UIControllerCS : MonoBehaviour
         }
         catLevelObj.SetActive(false);
         isOpenBackPack = false;
+
+    }
+
+
+    [SerializeField]
+    InputField buyNum;
+
+
+    /// <summary>
+    /// 初始化购买货物数据(transition:过渡变量)
+    /// </summary>
+    private void InitUIForBuyGoods()
+    { 
+        int transition_initNum = 1;
+        buyNum.text = transition_initNum.ToString();
+    }
+
+    /// <summary>
+    /// 点击加入购物车
+    /// </summary>
+    public void BuyInCarOnClick()
+    {
+        print("..."+buyNum.text.ToString());
+    }
+    /// <summary>
+    /// 点击数量加
+    /// </summary>
+    public void NumAddOnClick()
+    {
+        if (int.Parse(buyNum.text.ToString()) > 0)
+        {
+            buyNum.text = (int.Parse(buyNum.text.ToString()) + 1).ToString();
+        }
+    }
+    /// <summary>
+    /// 点击数量减
+    /// </summary>
+    public void NumSubtractCarOnClick()
+    {
+        if (int.Parse(buyNum.text.ToString()) > 1)
+        {
+            buyNum.text = (int.Parse(buyNum.text.ToString()) - 1).ToString();
+        }
+    }
+
+    /// <summary>
+    /// 点击购买打开支付界面
+    /// </summary>
+    public void PayMoneyOnClick()
+    {
 
     }
 }
