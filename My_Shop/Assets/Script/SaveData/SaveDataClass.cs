@@ -6,43 +6,48 @@ using UnityEngine;
 /// <summary>
 /// 单个货物类
 /// </summary>
-public class WoodDataClass
+public class GoodsDataClass
 {
-    /// <summary>
-    /// 货物种类
-    /// </summary>
-    public int woodType { get; set; }
-
     /// <summary>
     /// Id
     /// </summary>
-    public int woodId { get; set; }
+    public int goodsId { get; set; }
 
     /// <summary>
     /// 数量
     /// </summary>
-    public int woodNum { get; set; }
+    public int goodsNum { get; set; }
 
     /// <summary>
     /// 卖价
     /// </summary>
-    public int woodPrice { get; set; }
+    public int goodsPrice { get; set; }
 
     /// <summary>
     /// 进货时间
     /// </summary>
     public string purchaseTime { get; set; }
+
+    /// <summary>
+    /// 是否到货
+    /// </summary>
+    public bool isArrivaled { get; set; }
+
+    /// <summary>
+    /// 到货时间
+    /// </summary>
+    public string arrivalTime { get; set; }
 }
 
 /// <summary>
 /// 货物存档类
 /// </summary>
-public class WoodsListDataClass
+public class GoodsListDataClass
 {
     /// <summary>
     /// 货物列表
     /// </summary>
-    public List<WoodDataClass> woodDataClasses;
+    public List<GoodsDataClass> goodsDataClasses;
 }
 
 /// <summary>
@@ -50,14 +55,6 @@ public class WoodsListDataClass
 /// </summary>
 public class PlayerDataClass
 {
-    ///// <summary>
-    ///// 姓名
-    ///// </summary>
-    //public string playerName { get; set; }
-    ///// <summary>
-    ///// 店铺名
-    ///// </summary>
-    //public string shopName { get; set; }
     /// <summary>
     /// 等级
     /// </summary>

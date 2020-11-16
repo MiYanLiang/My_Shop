@@ -11,42 +11,6 @@ public class OTCTableItem
     public string OTCname { get; set; }
     public string OTCdescribe { get; set; }
 }
-public class SnacksTableItem
-{
-    public int SnacksId { get; set; }
-    public string SnacksName { get; set; }
-    public string Date_in_produced { get; set; }
-    public int Shelf_life { get; set; }
-    public float Purchasing_price { get; set; }
-    public int Image_id { get; set; }
-}
-public class DrinksTableItem
-{
-    public int DrinksId { get; set; }
-    public string DrinksName { get; set; }
-    public string Date_in_produced { get; set; }
-    public int Shelf_life { get; set; }
-    public float Purchasing_price { get; set; }
-    public int Image_id { get; set; }
-}
-public class IceTableItem
-{
-    public int IceId { get; set; }
-    public string IceName { get; set; }
-    public string Date_in_produced { get; set; }
-    public int Shelf_life { get; set; }
-    public float Purchasing_price { get; set; }
-    public int Image_id { get; set; }
-}
-public class SogoTableItem
-{
-    public int SogoId { get; set; }
-    public string SogoName { get; set; }
-    public string Date_in_produced { get; set; }
-    public int Shelf_life { get; set; }
-    public float Purchasing_price { get; set; }
-    public int Image_id { get; set; }
-}
 public class AwardTableItem
 {
     public int AwardId { get; set; }
@@ -56,4 +20,14 @@ public class AwardTableItem
     public int Three_probability { get; set; }
     public float Purchasing_price { get; set; }
     public int Image_id { get; set; }
+}
+public class GoodsTableItem
+{
+    public int GoodsId { get; set; }
+    public string GoodsName { get; set; }
+    public float PurchaseTime { get; set; }
+    public float ShelfLife { get; set; }
+    public float PurchasingPrice { get; set; }
+    public int ImageId { get; set; }
+    public int TypeId { get; set; }
 }

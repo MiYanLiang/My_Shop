@@ -9,7 +9,7 @@ public class PlayerSaveDataCS : MonoBehaviour
     /// <summary>
     /// 货物数据类
     /// </summary>
-    public WoodsListDataClass wdData = new WoodsListDataClass();
+    public GoodsListDataClass gdsData = new GoodsListDataClass();
 
     /// <summary>
     /// 玩家数据类

@@ -90,7 +90,7 @@ public class LoadSaveData : MonoBehaviour
         }
         isLoadingSaveData = false;
     }
-    private void SaveByJson(WoodsListDataClass save)
+    private void SaveByJson(GoodsListDataClass save)
     {
         isLoadingSaveData = true;
         try
@@ -113,13 +113,13 @@ public class LoadSaveData : MonoBehaviour
         {
             case 0:
                 SaveByJson(PlayerSaveDataCS.instance.pyData);
-                SaveByJson(PlayerSaveDataCS.instance.wdData);
+                SaveByJson(PlayerSaveDataCS.instance.gdsData);
                 break;
             case 1:
                 SaveByJson(PlayerSaveDataCS.instance.pyData);
                 break;
             case 2:
-                SaveByJson(PlayerSaveDataCS.instance.wdData);
+                SaveByJson(PlayerSaveDataCS.instance.gdsData);
                 break;
             default:
                 break;
@@ -162,7 +162,7 @@ public class LoadSaveData : MonoBehaviour
             string filePath1 = AppDebugClass.wdDataString;
 
             PlayerDataClass save0 = new PlayerDataClass();
-            WoodsListDataClass save1 = new WoodsListDataClass();
+            GoodsListDataClass save1 = new GoodsListDataClass();
 
             string jsonStr0 = string.Empty;
             string jsonStr1 = string.Empty;
@@ -175,7 +175,7 @@ public class LoadSaveData : MonoBehaviour
                 save0 = JsonConvert.DeserializeObject<PlayerDataClass>(jsonStr0);
 
                 jsonStr1 = File.ReadAllText(filePath1);
-                save1 = JsonConvert.DeserializeObject<WoodsListDataClass>(jsonStr1);
+                save1 = JsonConvert.DeserializeObject<GoodsListDataClass>(jsonStr1);
 
                 Debug.Log("读档成功");
 
@@ -198,7 +198,7 @@ public class LoadSaveData : MonoBehaviour
                         save0 = JsonConvert.DeserializeObject<PlayerDataClass>(jsonStr0);
 
                         jsonStr1 = File.ReadAllText(filePath1);
-                        save1 = JsonConvert.DeserializeObject<WoodsListDataClass>(jsonStr1);
+                        save1 = JsonConvert.DeserializeObject<GoodsListDataClass>(jsonStr1);
                         Debug.Log("读取备份存档成功");
                     }
                     else
@@ -234,27 +234,25 @@ public class LoadSaveData : MonoBehaviour
         string filePath1 = AppDebugClass.wdDataString;
 
         PlayerDataClass save0 = new PlayerDataClass();
-        WoodsListDataClass save1 = new WoodsListDataClass();
+        GoodsListDataClass save1 = new GoodsListDataClass();
 
         //save0.playerName = "空";
         //save0.shopName = "空";
         save0.level = 1;
         save0.money = 88888;
 
-        save1.woodDataClasses = new System.Collections.Generic.List<WoodDataClass>();
+        save1.goodsDataClasses = new System.Collections.Generic.List<GoodsDataClass>();
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 55; i++)
         {
-            for (int j = 0; j < 3; j++)
-            {
-                WoodDataClass woodDataClass = new WoodDataClass();
-                woodDataClass.woodType = i;
-                woodDataClass.woodId = j;
-                woodDataClass.woodNum = 10;
-                woodDataClass.woodPrice = 30;
-                woodDataClass.purchaseTime = "";
-                save1.woodDataClasses.Add(woodDataClass);
-            }
+            GoodsDataClass goodsDataClass = new GoodsDataClass();
+            goodsDataClass.goodsId = i;
+            goodsDataClass.goodsNum = 10;
+            goodsDataClass.goodsPrice = 30;
+            goodsDataClass.purchaseTime = "";
+            goodsDataClass.isArrivaled = true;
+            goodsDataClass.arrivalTime = "";
+            save1.goodsDataClasses.Add(goodsDataClass);
         }
 
         SetGamePlayerBasicData(save0, save1);
@@ -269,10 +267,10 @@ public class LoadSaveData : MonoBehaviour
     /// <summary>
     /// 提取存档数据到游戏中
     /// </summary>
-    private void SetGamePlayerBasicData(PlayerDataClass save, WoodsListDataClass save1)
+    private void SetGamePlayerBasicData(PlayerDataClass save, GoodsListDataClass save1)
     {
         PlayerSaveDataCS.instance.pyData = save;
-        PlayerSaveDataCS.instance.wdData = save1;
+        PlayerSaveDataCS.instance.gdsData = save1;
     }
 
     /// <summary>

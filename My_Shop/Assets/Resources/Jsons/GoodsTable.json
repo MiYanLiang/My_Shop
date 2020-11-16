@@ -1,0 +1,535 @@
+{
+	"GoodsTable": [
+		{
+			"GoodsId": "0",
+			"GoodsName": "唐僧肉",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "3.0",
+			"PurchasingPrice": "1.1",
+			"ImageId": "20001",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "1",
+			"GoodsName": "口哨糖",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "4.0",
+			"PurchasingPrice": "3.0",
+			"ImageId": "20002",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "2",
+			"GoodsName": "吸管糖",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "5.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "20003",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "3",
+			"GoodsName": "小浣熊干脆面",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "6.0",
+			"PurchasingPrice": "5.0",
+			"ImageId": "20004",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "4",
+			"GoodsName": "旺仔小馒头",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "7.0",
+			"PurchasingPrice": "4.0",
+			"ImageId": "20005",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "5",
+			"GoodsName": "咪咪虾条",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "8.0",
+			"PurchasingPrice": "1.0",
+			"ImageId": "20006",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "6",
+			"GoodsName": "西瓜泡泡糖",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "9.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "20007",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "7",
+			"GoodsName": "小当家方便面",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "10.0",
+			"PurchasingPrice": "0.5",
+			"ImageId": "20008",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "8",
+			"GoodsName": "大白兔奶糖",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "11.0",
+			"PurchasingPrice": "3.0",
+			"ImageId": "20009",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "9",
+			"GoodsName": "字母饼干",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "12.0",
+			"PurchasingPrice": "2.5",
+			"ImageId": "20010",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "10",
+			"GoodsName": "猪油糖",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "13.0",
+			"PurchasingPrice": "13.0",
+			"ImageId": "20011",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "11",
+			"GoodsName": "康康饼",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "14.0",
+			"PurchasingPrice": "23.0",
+			"ImageId": "20012",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "12",
+			"GoodsName": "花生软糖",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "15.0",
+			"PurchasingPrice": "1.0",
+			"ImageId": "20013",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "13",
+			"GoodsName": "无花果",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "16.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "20014",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "14",
+			"GoodsName": "润喉糖",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "17.0",
+			"PurchasingPrice": "3.0",
+			"ImageId": "20015",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "15",
+			"GoodsName": "华丰伊面",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "18.0",
+			"PurchasingPrice": "4.0",
+			"ImageId": "20016",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "16",
+			"GoodsName": "橘子糖",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "19.0",
+			"PurchasingPrice": "6.0",
+			"ImageId": "20017",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "17",
+			"GoodsName": "大大泡泡糖",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "20.0",
+			"PurchasingPrice": "7.0",
+			"ImageId": "20018",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "18",
+			"GoodsName": "",
+			"PurchaseTime": "0.0",
+			"ShelfLife": "0.0",
+			"PurchasingPrice": "0.0",
+			"ImageId": "0",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "19",
+			"GoodsName": "可口可乐",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "3.0",
+			"PurchasingPrice": "1.0",
+			"ImageId": "30001",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "20",
+			"GoodsName": "椰树牌椰汁",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "4.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "30002",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "21",
+			"GoodsName": "健力宝",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "5.0",
+			"PurchasingPrice": "3.0",
+			"ImageId": "30003",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "22",
+			"GoodsName": "旭日升",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "6.0",
+			"PurchasingPrice": "4.0",
+			"ImageId": "30004",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "23",
+			"GoodsName": "老酸奶",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "7.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "30005",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "24",
+			"GoodsName": "麦乳精",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "8.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "30006",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "25",
+			"GoodsName": "非常可乐",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "9.0",
+			"PurchasingPrice": "3.0",
+			"ImageId": "30007",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "26",
+			"GoodsName": "乐百氏AD钙奶",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "10.0",
+			"PurchasingPrice": "3.0",
+			"ImageId": "30008",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "27",
+			"GoodsName": "雀巢冰爽茶",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "11.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "30009",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "28",
+			"GoodsName": "亚洲汽水",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "12.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "30010",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "29",
+			"GoodsName": "高乐高",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "13.0",
+			"PurchasingPrice": "3.0",
+			"ImageId": "30011",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "30",
+			"GoodsName": "哇哈哈AD钙奶",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "14.0",
+			"PurchasingPrice": "3.0",
+			"ImageId": "30012",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "31",
+			"GoodsName": "旺仔牛奶",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "15.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "30013",
+			"TypeId": "1"
+		},
+		{
+			"GoodsId": "32",
+			"GoodsName": "",
+			"PurchaseTime": "0.0",
+			"ShelfLife": "0.0",
+			"PurchasingPrice": "0.0",
+			"ImageId": "0",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "33",
+			"GoodsName": "夏威夷冰棍",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "3.0",
+			"PurchasingPrice": "1.0",
+			"ImageId": "40001",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "34",
+			"GoodsName": "雪莲",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "4.0",
+			"PurchasingPrice": "1.5",
+			"ImageId": "40002",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "35",
+			"GoodsName": "七个小矮人",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "5.0",
+			"PurchasingPrice": "0.5",
+			"ImageId": "40003",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "36",
+			"GoodsName": "美国大脚板",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "6.0",
+			"PurchasingPrice": "1.0",
+			"ImageId": "40004",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "37",
+			"GoodsName": "小布丁",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "7.0",
+			"PurchasingPrice": "1.0",
+			"ImageId": "40005",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "38",
+			"GoodsName": "菠萝爽",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "8.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "40006",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "39",
+			"GoodsName": "甲方乙方",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "9.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "40007",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "40",
+			"GoodsName": "糯米冰棍",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "10.0",
+			"PurchasingPrice": "1.0",
+			"ImageId": "40008",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "41",
+			"GoodsName": "巧乐兹",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "11.0",
+			"PurchasingPrice": "1.0",
+			"ImageId": "40009",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "42",
+			"GoodsName": "奶提子",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "12.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "40010",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "43",
+			"GoodsName": "娃娃头雪糕",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "13.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "40011",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "44",
+			"GoodsName": "白糖冰棍",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "14.0",
+			"PurchasingPrice": "1.0",
+			"ImageId": "40012",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "45",
+			"GoodsName": "玉米雪糕",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "15.0",
+			"PurchasingPrice": "1.0",
+			"ImageId": "40013",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "46",
+			"GoodsName": "摇舌头冰棍",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "16.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "40014",
+			"TypeId": "2"
+		},
+		{
+			"GoodsId": "47",
+			"GoodsName": "",
+			"PurchaseTime": "0.0",
+			"ShelfLife": "0.0",
+			"PurchasingPrice": "0.0",
+			"ImageId": "0",
+			"TypeId": "0"
+		},
+		{
+			"GoodsId": "48",
+			"GoodsName": "充电器",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "0.0",
+			"PurchasingPrice": "1.0",
+			"ImageId": "50001",
+			"TypeId": "3"
+		},
+		{
+			"GoodsId": "49",
+			"GoodsName": "面条",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "1.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "50002",
+			"TypeId": "3"
+		},
+		{
+			"GoodsId": "50",
+			"GoodsName": "四驱赛车",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "0.0",
+			"PurchasingPrice": "31.0",
+			"ImageId": "50003",
+			"TypeId": "3"
+		},
+		{
+			"GoodsId": "51",
+			"GoodsName": "溜溜球",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "0.0",
+			"PurchasingPrice": "23.0",
+			"ImageId": "50004",
+			"TypeId": "3"
+		},
+		{
+			"GoodsId": "52",
+			"GoodsName": "火药枪",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "0.0",
+			"PurchasingPrice": "22.0",
+			"ImageId": "50005",
+			"TypeId": "3"
+		},
+		{
+			"GoodsId": "53",
+			"GoodsName": "枪_喷子",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "0.0",
+			"PurchasingPrice": "22.0",
+			"ImageId": "50006",
+			"TypeId": "3"
+		},
+		{
+			"GoodsId": "54",
+			"GoodsName": "枪_手枪",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "0.0",
+			"PurchasingPrice": "11.0",
+			"ImageId": "50007",
+			"TypeId": "3"
+		},
+		{
+			"GoodsId": "55",
+			"GoodsName": "电池",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "0.0",
+			"PurchasingPrice": "3.0",
+			"ImageId": "50008",
+			"TypeId": "3"
+		},
+		{
+			"GoodsId": "56",
+			"GoodsName": "醋",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "13.0",
+			"PurchasingPrice": "2.0",
+			"ImageId": "50009",
+			"TypeId": "3"
+		},
+		{
+			"GoodsId": "57",
+			"GoodsName": "酱油",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "11.0",
+			"PurchasingPrice": "3.0",
+			"ImageId": "50010",
+			"TypeId": "3"
+		},
+		{
+			"GoodsId": "58",
+			"GoodsName": "油",
+			"PurchaseTime": "4.0",
+			"ShelfLife": "22.0",
+			"PurchasingPrice": "4.0",
+			"ImageId": "50011",
+			"TypeId": "3"
+		}
+	]
+}

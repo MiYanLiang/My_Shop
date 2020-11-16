@@ -1,85 +1,189 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class TimerControll : MonoBehaviour
 {
-    public Text timer_;
-    public Text curTime;
+    public static TimerControll instance;
 
-    DateTime gameTime = new DateTime(1997,4,4,6,0,0);
+    //获取网络时间戳网址
+    private readonly string timeWebPath = "http://www.hko.gov.hk/cgi-bin/gts/time5a.pr?a=1";
+    private readonly string timeWebPath0 = "http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp";
 
-    DateTime beginTime =new DateTime(); //获取的当前时间
-    DateTime nextTime = new DateTime(); //下一次登录的时间
-    DateTime compareTime = new DateTime(0001,1,1,0,0,0); //比较时间，判断是否第一次登录
+    /// <summary>
+    /// 是否获取到网络时间
+    /// </summary>
+    public static bool isGetNetworkTime;
+    /// <summary>
+    /// 当前网络时间戳long
+    /// </summary>
+    public static long nowTimeLong;
 
+    private static DateTime startTime;
 
-
-    // Start is called before the first frame update
-    //Debug.Log(beginTime.CompareTo(gameTime).ToString());//0 两时间比较:早于<0，同时==0，迟于>0[static&&not static]
-    //Debug.Log("beginTime:"+beginTime);
-    //Debug.Log("gameTime:"+gameTime);
-    //Debug.Log(long.Parse(GetTimeStamp(gameTime))-long.Parse(GetTimeStamp(gameTime1)));
-    //Debug.Log(GetTime("61"));
-    void Start()
+    private void Awake()
     {
-        //beginTime = DateTime.Now;//每次登录获取当前时间
-        //string getNextTimeStr = PlayerPrefs.GetString("CurrentTime");
-        //Debug.Log(getNextTimeStr);
-        //curTime.text = getNextTimeStr;//nextTime.ToString();
-        ////判断是否第一次登录
-        //if (int.Parse(getNextTimeStr) < 0)//nextTime.CompareTo(compareTime).ToString() == "0"
-        //{
-        //    nextTime = beginTime;
-        //    string nextTimeStr = GetTimeStamp(nextTime);//将时间转换为秒数
-        //    PlayerPrefs.SetString("CurrentTime", nextTimeStr);//存储每次进来的初始时间
-        //    //curTime.text = "bb";//gameTime.ToString();
-        //    Debug.Log(nextTime);
-        //}
-        //else
-        //{
-        //    //有第二次登录时，进行时间处理
-        //    string getBeginTimeStr = PlayerPrefs.GetString("CurrentTime");//获取的是第一次登录的时间转化为的秒数
-        //    string curBeginTimeStr = GetTimeStamp(beginTime);//获取的是第二次登录的时间转化为的秒数
-        //    long differenceValue = long.Parse(curBeginTimeStr) - long.Parse(getBeginTimeStr);
-        //    //将差值加到游戏时间
-        //    DateTime finallyTime = GetTime(gameTime,differenceValue.ToString());
-        //    //curTime.text = "cc";//finallyTime.ToString();
-        //}
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        //DontDestroyOnLoad(gameObject);
+
+        isGetNetworkTime = false;
+        startTime = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1));
+
+        StartCoroutine(GetTime());
     }
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// 实时更新网络时间
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator GetTime()
     {
-        timer_.text = DateTime.Now.ToString();
-    }
-    //当前时间转换为秒数
-    private static string GetTimeStamp(DateTime timeStamp)
-    {
-        TimeSpan ts = DateTime.UtcNow - timeStamp;
-        return Convert.ToInt64(ts.TotalSeconds).ToString();
-    }
-    //秒数转换为时间
-    private DateTime GetTime(DateTime dtStart,string timeStamp)
-    {
-        //DateTime dtStart = new DateTime(1997, 4, 4, 0, 0, 0, 0);  //起始时间
-        long lTime = long.Parse(timeStamp + "0000000");//转为long类型  
-        TimeSpan toNow = new TimeSpan(lTime); //时间间隔
-        return dtStart.Add(toNow); //加上时间间隔得到目标时间
+        string timeStr = string.Empty;
+
+        while (true)
+        {
+            WWW www = new WWW(timeWebPath0);
+            yield return www;
+
+            if (www.text == "" || www.text.Trim() == "")//如果断网
+            {
+                isGetNetworkTime = false;
+
+                print("请联网");
+            }
+            else//成功获取网络时间
+            {
+                try
+                {
+                    //0=1600529802400
+                    //timeStr = www.text.Substring(2); //获取网络准确时间戳
+                    timeStr = www.text.Substring(81, 13); //获取网络准确时间戳
+
+                    nowTimeLong = long.Parse(timeStr);
+
+                    isGetNetworkTime = true;
+
+                    print(GetStrBackTime());
+                }
+                catch (Exception e)
+                {
+                    isGetNetworkTime = false;
+                    print("请联网");
+                }
+
+            }
+            yield return new WaitForSeconds(5f);
+        }
     }
 
-    //存储数据
-    public void SaveDataClick()
+    /// <summary>
+    /// 根据秒数返回时间格式
+    /// </summary>
+    /// <param name="seconds"></param>
+    /// <returns></returns>
+    public static string BackToTimeShow(int seconds)
     {
-        string NowTime = DateTime.Now.ToString();
-        PlayerPrefs.SetString("_NowTime", NowTime);
+        string str = string.Empty;
+        if (seconds <= 0)
+        {
+            str = "";
+        }
+        else
+        {
+            if (seconds < 3600)
+            {
+                str = seconds / 60 + "分" + seconds % 60 + "秒";
+            }
+            else
+            {
+                if (seconds < 86400)
+                {
+                    str = seconds / 3600 + "时" + (seconds % 3600) / 60 + "分";
+                }
+                else
+                {
+                    str = seconds / 86400 + "天" + (seconds % 86400) / 3600 + "时";
+                }
+            }
+        }
+        return str;
     }
 
-    public void GetDataClick()
+    /// <summary>
+    /// 获取当前时间
+    /// </summary>
+    /// <returns></returns>
+    public static DateTime GetStrBackTime()
     {
-        curTime.text= PlayerPrefs.GetString("_NowTime");
+        //return nowTimeLong;
+        return startTime.AddMilliseconds(Convert.ToDouble(nowTimeLong));
     }
 
+    //////////////////////////未用到//////////////////////////////////////////
+
+    /// <summary>
+    /// 获取百度时间
+    /// </summary>
+    /// <returns></returns>
+    private string GetNetDateTime()
+    {
+        WebRequest request = null;
+        WebResponse response = null;
+        WebHeaderCollection headerCollection = null;
+        string datetime = string.Empty;
+        try
+        {
+            request = WebRequest.Create("https://www.baidu.com");
+            request.Timeout = 3000;
+            request.Credentials = CredentialCache.DefaultCredentials;
+            response = (WebResponse)request.GetResponse();
+            headerCollection = response.Headers;
+            foreach (var h in headerCollection.AllKeys)
+            { if (h == "Date") { datetime = headerCollection[h]; } }
+            return datetime;
+        }
+        catch (Exception) { return datetime; }
+        finally
+        {
+            if (request != null)
+            { request.Abort(); }
+            if (response != null)
+            { response.Close(); }
+            if (headerCollection != null)
+            { headerCollection.Clear(); }
+        }
+    }
+
+    /// <summary>
+    /// 获取网址内容
+    /// </summary>
+    /// <param name="getUrl"></param>
+    /// <returns></returns>
+    private static string GetWebRequest(string getUrl)
+    {
+        string responseContent = "";
+
+        HttpWebRequest request = (HttpWebRequest)WebRequest.Create(getUrl);
+        request.ContentType = "application/json";
+        request.Method = "GET";
+
+        HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+        //在这里对接收到的页面内容进行处理
+        using (System.IO.Stream resStream = response.GetResponseStream())
+        {
+            using (System.IO.StreamReader reader = new System.IO.StreamReader(resStream, System.Text.Encoding.UTF8))
+            {
+                responseContent = reader.ReadToEnd().ToString();
+            }
+        }
+        return responseContent;
+    }
 }

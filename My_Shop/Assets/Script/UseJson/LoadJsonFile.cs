@@ -11,7 +11,7 @@ public class LoadJsonFile : MonoBehaviour
     //Resources文件夹下
     public static readonly string topFolder = "Jsons/";
     //存放json数据名
-    private static readonly string tableNameStrs = "ShopTable;OTCTable;SnacksTable;DrinksTable;IceTable;SogoTable;AwardTable";
+    private static readonly string tableNameStrs = "ShopTable;OTCTable;AwardTable;GoodsTable";
 
     /// <summary>
     /// 游戏数据库
@@ -47,39 +47,18 @@ public class LoadJsonFile : MonoBehaviour
             gameDataBase.OTCTable = root.OTCTable;
             indexTable++;
         }
-        // 加载数据:SnacksTable
-        {
-            jsonData = LoadJsonByName(tableNames[indexTable]);
-            root = JsonConvert.DeserializeObject<Roots>(jsonData);
-            gameDataBase.SnacksTable = root.SnacksTable;
-            indexTable++;
-        }
-        // 加载数据:DrinksTable
-        {
-            jsonData = LoadJsonByName(tableNames[indexTable]);
-            root = JsonConvert.DeserializeObject<Roots>(jsonData);
-            gameDataBase.DrinksTable = root.DrinksTable;
-            indexTable++;
-        }
-        // 加载数据:IceTable
-        {
-            jsonData = LoadJsonByName(tableNames[indexTable]);
-            root = JsonConvert.DeserializeObject<Roots>(jsonData);
-            gameDataBase.IceTable = root.IceTable;
-            indexTable++;
-        }
-        // 加载数据:SogoTable
-        {
-            jsonData = LoadJsonByName(tableNames[indexTable]);
-            root = JsonConvert.DeserializeObject<Roots>(jsonData);
-            gameDataBase.SogoTable = root.SogoTable;
-            indexTable++;
-        }
         // 加载数据:AwardTable
         {
             jsonData = LoadJsonByName(tableNames[indexTable]);
             root = JsonConvert.DeserializeObject<Roots>(jsonData);
             gameDataBase.AwardTable = root.AwardTable;
+            indexTable++;
+        }
+        // 加载数据:GoodsTable
+        {
+            jsonData = LoadJsonByName(tableNames[indexTable]);
+            root = JsonConvert.DeserializeObject<Roots>(jsonData);
+            gameDataBase.GoodsTable = root.GoodsTable;
             indexTable++;
         }
 

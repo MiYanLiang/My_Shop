@@ -3,12 +3,12 @@
 		{
 			"OTCid": "1",
 			"OTCname": "Refrigerator",
-			"OTCdescribe": "冰箱，内含雪糕"
+			"OTCdescribe": "冰箱，内含饮料及酸奶"
 		},
 		{
 			"OTCid": "2",
 			"OTCname": "Freezer",
-			"OTCdescribe": "冰柜，内含饮料及酸奶"
+			"OTCdescribe": "冰柜，内含雪糕"
 		},
 		{
 			"OTCid": "3",
