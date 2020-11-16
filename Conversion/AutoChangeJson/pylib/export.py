@@ -21,15 +21,17 @@ import e_create_drinksTable
 import e_create_iceTable
 import e_create_sogoTable
 import e_create_awardTable
+import e_create_goodsTable
 
 taskList = (
 	('/MyShop.xlsx', e_create_shopTable, '/ShopTable.json'),
 	('/MyShop.xlsx', e_create_OTCTable, '/OTCTable.json'),
-	('/MyShop.xlsx', e_create_snacksTable, '/SnacksTable.json'),
-	('/MyShop.xlsx', e_create_drinksTable, '/DrinksTable.json'),
-	('/MyShop.xlsx', e_create_iceTable, '/IceTable.json'),
-	('/MyShop.xlsx', e_create_sogoTable, '/SogoTable.json'),
+	#('/MyShop.xlsx', e_create_snacksTable, '/SnacksTable.json'),
+	#('/MyShop.xlsx', e_create_drinksTable, '/DrinksTable.json'),
+	#('/MyShop.xlsx', e_create_iceTable, '/IceTable.json'),
+	#('/MyShop.xlsx', e_create_sogoTable, '/SogoTable.json'),
 	('/MyShop.xlsx', e_create_awardTable, '/AwardTable.json'),
+	('/MyShop.xlsx', e_create_goodsTable, '/GoodsTable.json'),
 )
 
 
