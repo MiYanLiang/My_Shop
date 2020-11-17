@@ -1567,3 +1567,634 @@ UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:69)
 UnityEngine.MonoBehaviour:print(Object)
 UIControllerCS:BuyInCarOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:310)
 UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:35:46__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:67)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:128)
+
+2020/11/17 12:35:46__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:70)
+
+2020/11/17 12:35:46__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:70)
+
+2020/11/17 12:35:46__DebugLog__11/17/2020 12:35:47
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:35:52__DebugLog__11/17/2020 12:35:52
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:35:57__DebugLog__11/17/2020 12:35:57
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:36:02__DebugLog__11/17/2020 12:36:02
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:36:07__DebugLog__11/17/2020 12:36:07
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:36:12__DebugLog__11/17/2020 12:36:12
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:36:17__DebugLog__11/17/2020 12:36:18
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:39:12__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:67)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:128)
+
+2020/11/17 12:39:12__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:70)
+
+2020/11/17 12:39:12__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:70)
+
+2020/11/17 12:39:12__DebugLog__11/17/2020 12:39:12
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:39:17__DebugLog__11/17/2020 12:39:18
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:39:18__DebugLog__goodsId: 0
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:39:19__DebugLog__goodsId: 1
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:39:19__DebugLog__goodsId: 2
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:39:20__DebugLog__goodsId: 3
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:39:21__DebugLog__goodsId: 0
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:39:21__DebugLog__goodsId: 1
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:39:22__DebugLog__goodsId: 2
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:39:22__DebugLog__goodsId: 3
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:39:23__DebugLog__11/17/2020 12:39:23
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:39:23__DebugLog__goodsId: 1
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:39:23__DebugLog__goodsId: 0
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:39:26__DebugLog__真好，钱够
+UnityEngine.Debug:Log(Object)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:317)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:39:28__DebugLog__11/17/2020 12:39:28
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:39:33__DebugLog__11/17/2020 12:39:33
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:40:41__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:67)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:128)
+
+2020/11/17 12:40:41__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:70)
+
+2020/11/17 12:40:41__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:70)
+
+2020/11/17 12:40:41__DebugLog__11/17/2020 12:40:41
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:40:44__DebugLog__goodsId: 0
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:40:44__DebugLog__goodsId: 1
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:40:45__DebugLog__goodsId: 2
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:40:45__DebugLog__goodsId: 3
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:40:46__DebugLog__goodsId: 2
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:40:47__DebugLog__11/17/2020 12:40:47
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:40:47__DebugLog__goodsId: 1
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:40:52__DebugLog__goodsId: 0
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:40:52__DebugLog__11/17/2020 12:40:52
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 12:40:53__DebugLog__goodsId: 1
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:40:53__DebugLog__goodsId: 2
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 12:40:54__DebugLog__goodsId: 3
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:15:53__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:67)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:128)
+
+2020/11/17 13:15:53__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:70)
+
+2020/11/17 13:15:53__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:70)
+
+2020/11/17 13:15:53__DebugLog__11/17/2020 13:15:53
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 13:15:58__DebugLog__11/17/2020 13:15:59
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 13:15:59__DebugLog__goodsId: 17
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:15:59__DebugLog__goodsId: 16
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:00__DebugLog__goodsId: 15
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:01__DebugLog__goodsId: 17
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:01__DebugLog__goodsId: 11
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:02__DebugLog__goodsId: 5
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:02__DebugLog__goodsId: 3
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:03__DebugLog__goodsId: 8
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:03__DebugLog__goodsId: 7
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:03__DebugLog__goodsId: 13
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:03__DebugLog__11/17/2020 13:16:04
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 13:16:04__DebugLog__goodsId: 12
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:04__DebugLog__goodsId: 6
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:05__DebugLog__goodsId: 0
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:09__DebugLog__11/17/2020 13:16:09
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 13:16:14__DebugLog__goodsId: 9
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:14__DebugLog__11/17/2020 13:16:15
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 13:16:15__DebugLog__goodsId: 10
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:15__DebugLog__goodsId: 11
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 13:16:15__DebugLog__goodsId: 17
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:51:53__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:67)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:128)
+
+2020/11/17 14:51:53__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:70)
+
+2020/11/17 14:51:53__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:70)
+
+2020/11/17 14:51:53__DebugLog__11/17/2020 14:51:53
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 14:52:00__DebugLog__11/17/2020 14:52:00
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 14:52:04__DebugLog__goodsId: 31
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:04__DebugLog__goodsId: 26
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:05__DebugLog__goodsId: 30
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:05__DebugLog__11/17/2020 14:52:05
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 14:52:06__DebugLog__goodsId: 24
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:06__DebugLog__goodsId: 23
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:07__DebugLog__goodsId: 29
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:07__DebugLog__goodsId: 28
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:08__DebugLog__goodsId: 22
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:08__DebugLog__goodsId: 21
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:08__DebugLog__goodsId: 27
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:10__DebugLog__11/17/2020 14:52:10
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 14:52:11__DebugLog__真好，钱够
+UnityEngine.Debug:Log(Object)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:317)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:12__DebugLog__goodsId: 20
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:13__DebugLog__goodsId: 21
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:14__DebugLog__goodsId: 28
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:15__DebugLog__goodsId: 29
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 14:52:15__DebugLog__11/17/2020 14:52:16
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 15:29:05__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:67)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:128)
+
+2020/11/17 15:29:05__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:180)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:70)
+
+2020/11/17 15:29:05__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:144)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:183)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:70)
+
+2020/11/17 15:29:05__DebugLog__11/17/2020 15:29:05
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 15:29:10__DebugLog__11/17/2020 15:29:11
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 15:29:16__DebugLog__11/17/2020 15:29:16
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 15:29:21__DebugLog__11/17/2020 15:29:21
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 15:29:26__DebugLog__11/17/2020 15:29:26
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 15:29:31__DebugLog__goodsId: 36
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:31__DebugLog__11/17/2020 15:29:32
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 15:29:32__DebugLog__goodsId: 42
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:33__DebugLog__goodsId: 44
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:34__DebugLog__goodsId: 52
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:35__DebugLog__goodsId: 53
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:35__DebugLog__goodsId: 51
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:35__DebugLog__goodsId: 57
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:36__DebugLog__goodsId: 55
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:36__DebugLog__goodsId: 49
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:36__DebugLog__goodsId: 56
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:37__DebugLog__11/17/2020 15:29:37
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 15:29:37__DebugLog__goodsId: 53
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:39__DebugLog__goodsId: 48
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:40__DebugLog__goodsId: 54
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:40__DebugLog__goodsId: 55
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:41__DebugLog__goodsId: 49
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:41__DebugLog__goodsId: 55
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:41__DebugLog__goodsId: 56
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:42__DebugLog__11/17/2020 15:29:42
+UnityEngine.MonoBehaviour:print(Object)
+<GetTime>d__7:MoveNext() (at Assets/Script/Game/TimerControll.cs:74)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+2020/11/17 15:29:42__DebugLog__goodsId: 56
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:43__DebugLog__goodsId: 57
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:43__DebugLog__goodsId: 56
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/17 15:29:44__DebugLog__goodsId: 50
+UnityEngine.Debug:Log(Object)
+<>c__DisplayClass24_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:205)
+UnityEngine.EventSystems.EventSystem:Update()
