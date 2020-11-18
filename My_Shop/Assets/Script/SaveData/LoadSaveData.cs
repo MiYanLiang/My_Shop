@@ -72,6 +72,7 @@ public class LoadSaveData : MonoBehaviour
         Destroy(LoadJsonFile.instance.gameObject);
         Destroy(LoadSaveData.instance.gameObject);
         Destroy(PlayerSaveDataCS.instance.gameObject);
+        PlayerPrefs.DeleteAll();
     }
 
     /// <summary>
@@ -243,15 +244,16 @@ public class LoadSaveData : MonoBehaviour
 
         save1.goodsDataClasses = new System.Collections.Generic.List<GoodsDataClass>();
 
-        for (int i = 0; i < 55; i++)
+        for (int i = 0; i < 10; i++)
         {
             GoodsDataClass goodsDataClass = new GoodsDataClass();
             goodsDataClass.goodsId = i;
             goodsDataClass.goodsNum = 10;
             goodsDataClass.goodsPrice = 30;
-            goodsDataClass.purchaseTime = "";
+            goodsDataClass.isExpired = false;
+            goodsDataClass.purchaseTime = TimerControll.nowTimeLong.ToString();
             goodsDataClass.isArrivaled = true;
-            goodsDataClass.arrivalTime = "";
+            goodsDataClass.arrivalTime = TimerControll.nowTimeLong.ToString();
             save1.goodsDataClasses.Add(goodsDataClass);
         }
 

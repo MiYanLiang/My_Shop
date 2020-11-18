@@ -71,7 +71,7 @@ public class TimerControll : MonoBehaviour
 
                     isGetNetworkTime = true;
 
-                    print(GetStrBackTime());
+                    print("当前时间" + GetStrBackTime());
                 }
                 catch (Exception e)
                 {
@@ -118,13 +118,17 @@ public class TimerControll : MonoBehaviour
     }
 
     /// <summary>
-    /// 获取当前时间
+    /// 时间戳转换为时间格式
     /// </summary>
     /// <returns></returns>
-    public static DateTime GetStrBackTime()
+    public static DateTime GetStrBackTime(long timeLong = 0)
     {
+        if (timeLong == 0)
+        {
+            timeLong = nowTimeLong;
+        }
         //return nowTimeLong;
-        return startTime.AddMilliseconds(Convert.ToDouble(nowTimeLong));
+        return startTime.AddMilliseconds(Convert.ToDouble(timeLong));
     }
 
     //////////////////////////未用到//////////////////////////////////////////

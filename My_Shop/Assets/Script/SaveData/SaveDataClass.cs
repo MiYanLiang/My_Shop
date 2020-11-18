@@ -9,30 +9,29 @@ using UnityEngine;
 public class GoodsDataClass
 {
     /// <summary>
-    /// Id
+    /// 货物Id
     /// </summary>
     public int goodsId { get; set; }
-
     /// <summary>
     /// 数量
     /// </summary>
     public int goodsNum { get; set; }
-
     /// <summary>
     /// 卖价
     /// </summary>
-    public int goodsPrice { get; set; }
-
+    public float goodsPrice { get; set; }
+    /// <summary>
+    /// 是否过期
+    /// </summary>
+    public bool isExpired { get; set; }
     /// <summary>
     /// 进货时间
     /// </summary>
     public string purchaseTime { get; set; }
-
     /// <summary>
     /// 是否到货
     /// </summary>
     public bool isArrivaled { get; set; }
-
     /// <summary>
     /// 到货时间
     /// </summary>

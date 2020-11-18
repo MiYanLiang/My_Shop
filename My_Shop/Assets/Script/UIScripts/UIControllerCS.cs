@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -100,6 +101,17 @@ public class UIControllerCS : MonoBehaviour
         {
             if (LoadJsonFile.gameDataBase.GoodsTable[PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].goodsId].TypeId == indexType)
             {
+                if (!PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].isArrivaled)
+                {
+                    if (long.Parse(PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].arrivalTime) <= TimerControll.nowTimeLong)
+                    {
+                        PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].isArrivaled = true;
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
                 ShowOneGoodsForBackPack(
                             LoadJsonFile.gameDataBase.GoodsTable[PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].goodsId].GoodsName,
                             LoadJsonFile.gameDataBase.GoodsTable[PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].goodsId].ImageId,
@@ -179,7 +191,7 @@ public class UIControllerCS : MonoBehaviour
 
         for (int i = 0; i < LoadJsonFile.gameDataBase.GoodsTable.Count; i++)
         {
-            if (LoadJsonFile.gameDataBase.GoodsTable[i].GoodsName!=""&& LoadJsonFile.gameDataBase.GoodsTable[i].TypeId== indexType)
+            if (LoadJsonFile.gameDataBase.GoodsTable[i].GoodsName != "" && LoadJsonFile.gameDataBase.GoodsTable[i].TypeId == indexType)
             {
                 int goodsId = i;
                 ShowOneGoodsForMarket(goodsId);
@@ -303,18 +315,126 @@ public class UIControllerCS : MonoBehaviour
     }
 
     /// <summary>
-    /// 点击购买打开支付界面
+    /// 点击尝试购买
     /// </summary>
     public void PayMoneyOnClick()
     {
-        if (PlayerSaveDataCS.instance.pyData.money< LoadJsonFile.gameDataBase.GoodsTable[choosedGoodsIndex].PurchasingPrice * choosedNums)
+        //总价
+        float allPrice = LoadJsonFile.gameDataBase.GoodsTable[choosedGoodsIndex].PurchasingPrice * choosedNums;
+
+        if (PlayerSaveDataCS.instance.pyData.money < allPrice)
         {
             Debug.Log("money is not enouy");
             return;
         }
         else
         {
+            ChangeMoneyNum(false, allPrice);
+
+            //进货时间
+            long nowTimeLong = TimerControll.nowTimeLong;
+            //到货时间
+            long arrivalTimeLong = nowTimeLong + (long)LoadJsonFile.gameDataBase.GoodsTable[choosedGoodsIndex].PurchaseTime * 60000; //分钟 * 60 * 1000
+
+            GoodsDataClass goodsDataClass = new GoodsDataClass();
+            goodsDataClass.goodsId = choosedGoodsIndex;
+            goodsDataClass.goodsNum = choosedNums;
+            goodsDataClass.goodsPrice = LoadJsonFile.gameDataBase.GoodsTable[choosedGoodsIndex].PurchasingPrice;
+            goodsDataClass.isExpired = false;
+            goodsDataClass.purchaseTime = nowTimeLong.ToString();
+            goodsDataClass.isArrivaled = false;
+            goodsDataClass.arrivalTime = arrivalTimeLong.ToString();
+            PlayerSaveDataCS.instance.gdsData.goodsDataClasses.Add(goodsDataClass);
+
+            string purchaseRecordStr = "{0}月{1}日 采购:{2}✖{3} 预计{4}到货;";
+            DateTime dateTime_Now = TimerControll.GetStrBackTime();
+            DateTime dateTime_Arrived = TimerControll.GetStrBackTime(arrivalTimeLong);
+
+            purchaseRecordStr = string.Format(purchaseRecordStr, dateTime_Now.Month, dateTime_Now.Day, LoadJsonFile.gameDataBase.GoodsTable[choosedGoodsIndex].GoodsName, choosedNums, dateTime_Arrived);
+            PlayerSaveDataCS.instance.SetPurchaseLedgerForMonth(dateTime_Now.Year, dateTime_Now.Month, purchaseRecordStr);
+
             Debug.Log("真好，钱够");
+        }
+    }
+
+    /// <summary>
+    /// 改变金钱数量
+    /// </summary>
+    /// <param name="isAdd"></param>
+    /// <param name="moneyNum"></param>
+    private void ChangeMoneyNum(bool isAdd, float moneyNum)
+    {
+        if (isAdd)
+        {
+            PlayerSaveDataCS.instance.pyData.money += moneyNum;
+        }
+        else
+        {
+            PlayerSaveDataCS.instance.pyData.money -= moneyNum;
+        }
+        goldNumText.text = PlayerSaveDataCS.instance.pyData.money.ToString();
+    }
+
+    [SerializeField]
+    GameObject zhangBenWinObj;  //账本obj
+    [SerializeField]
+    GameObject zhangBenViewObj;  //账本ViewObj
+    [SerializeField]
+    Transform zhangBenContentTran;  //账本内容父类
+    [SerializeField]
+    GameObject oneBillObj;  //账本单条记账obj
+
+    /// <summary>
+    /// 打开账本界面
+    /// </summary>
+    public void OpenZhangBenObjToShow()
+    {
+        if (isOpenBackPack)
+        {
+            return;
+        }
+        zhangBenWinObj.SetActive(true);
+        isOpenBackPack = true;
+    }
+
+    /// <summary>
+    /// 关闭账本界面
+    /// </summary>
+    public void CloseZhangBenObjToShow()
+    {
+        if (!isOpenBackPack)
+        {
+            return;
+        }
+        zhangBenViewObj.SetActive(false);
+        zhangBenWinObj.SetActive(false);
+        isOpenBackPack = false;
+    }
+
+    /// <summary>
+    /// 打开进货账单
+    /// </summary>
+    public void OpenPurchaseRecordWinFun()
+    {
+        for (int i = 0; i < zhangBenContentTran.childCount; i++)
+        {
+            Destroy(zhangBenContentTran.GetChild(i).gameObject);
+        }
+
+        DateTime dateTime = TimerControll.GetStrBackTime();
+
+        string recordStr = PlayerSaveDataCS.instance.GetPurchaseLedgerForMonth(dateTime.Year, dateTime.Month);
+
+        string[] records = recordStr.Split(';');
+        for (int i = 0; i < records.Length - 1; i++)
+        {
+            GameObject obj = Instantiate(oneBillObj, zhangBenContentTran);
+            obj.GetComponentInChildren<Text>().text = records[i].ToString();
+        }
+
+        if (!zhangBenViewObj.activeSelf)
+        {
+            zhangBenViewObj.SetActive(true);
         }
     }
 
