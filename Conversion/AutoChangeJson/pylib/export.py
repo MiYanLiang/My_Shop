@@ -22,6 +22,7 @@ import e_create_iceTable
 import e_create_sogoTable
 import e_create_awardTable
 import e_create_goodsTable
+import e_create_salesRatioTable
 
 taskList = (
 	('/MyShop.xlsx', e_create_shopTable, '/ShopTable.json'),
@@ -32,6 +33,7 @@ taskList = (
 	#('/MyShop.xlsx', e_create_sogoTable, '/SogoTable.json'),
 	('/MyShop.xlsx', e_create_awardTable, '/AwardTable.json'),
 	('/MyShop.xlsx', e_create_goodsTable, '/GoodsTable.json'),
+	('/MyShop.xlsx', e_create_salesRatioTable, '/SalesRatioTable.json'),
 )
 
 

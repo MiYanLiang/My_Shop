@@ -19,7 +19,8 @@ def export_json(xls, fn):
                 ss += "\t\t\t\"ShelfLife\": \"" + conv_flo(c[ri.Next()]) + "\",\n"
                 ss += "\t\t\t\"PurchasingPrice\": \"" + conv_flo(c[ri.Next()]) + "\",\n"
                 ss += "\t\t\t\"ImageId\": \"" + conv_int(c[ri.Next()]) + "\",\n"
-                ss += "\t\t\t\"TypeId\": \"" + conv_int(c[ri.Next()]) + "\"\n"
+                ss += "\t\t\t\"TypeId\": \"" + conv_int(c[ri.Next()]) + "\",\n"
+                ss += "\t\t\t\"SalesLevel\": \"" + conv_int(c[ri.Next()]) + "\"\n"
                 ss += "\t\t},\n"
                 s += ss
             s = s[:-2]
