@@ -39,7 +39,7 @@ public class LoadSaveData : MonoBehaviour
     private bool IsEventSaveData()
     {
         string filePath0 = AppDebugClass.pyDataString;
-        string filePath1 = AppDebugClass.wdDataString;
+        string filePath1 = AppDebugClass.gdsDataString;
 
         if (File.Exists(filePath0) && File.Exists(filePath1))
         {
@@ -63,7 +63,7 @@ public class LoadSaveData : MonoBehaviour
         {
             File.Delete(filePath);
         }
-        filePath = AppDebugClass.wdDataString;
+        filePath = AppDebugClass.gdsDataString;
         if (File.Exists(filePath))
         {
             File.Delete(filePath);
@@ -96,7 +96,7 @@ public class LoadSaveData : MonoBehaviour
         isLoadingSaveData = true;
         try
         {
-            File.WriteAllText(AppDebugClass.wdDataString, JsonConvert.SerializeObject(save));
+            File.WriteAllText(AppDebugClass.gdsDataString, JsonConvert.SerializeObject(save));
         }
         catch (System.Exception e)
         {
@@ -107,7 +107,7 @@ public class LoadSaveData : MonoBehaviour
     /// <summary>
     /// 存储游戏
     /// </summary>
-    /// <param name="indexFun">默认0：全部存储，1：存储pyData，2：存储wdData</param>
+    /// <param name="indexFun">默认0：全部存储，1：存储pyData，2：存储gdsData</param>
     public void SaveGameData(int indexFun = 0)
     {
         switch (indexFun)
@@ -125,22 +125,23 @@ public class LoadSaveData : MonoBehaviour
             default:
                 break;
         }
+        print("存档成功: " + indexFun);
     }
 
     /// <summary>
     /// 备份存档,传入json字符
     /// </summary>
     /// <param name="pyDataStr"></param>
-    /// <param name="wdDataStr"></param>
-    private void BackupArchiveForGame(string pyDataStr, string wdDataStr)
+    /// <param name="gdsDataStr"></param>
+    private void BackupArchiveForGame(string pyDataStr, string gdsDataStr)
     {
         string filePath0 = AppDebugClass.pyDataString1;
-        string filePath1 = AppDebugClass.wdDataString1;
+        string filePath1 = AppDebugClass.gdsDataString1;
 
         try
         {
             File.WriteAllText(filePath0, pyDataStr);
-            File.WriteAllText(filePath1, wdDataStr);
+            File.WriteAllText(filePath1, gdsDataStr);
 
             Debug.Log("存档备份成功");
         }
@@ -160,7 +161,7 @@ public class LoadSaveData : MonoBehaviour
         if (isHadSaveData)
         {
             string filePath0 = AppDebugClass.pyDataString;
-            string filePath1 = AppDebugClass.wdDataString;
+            string filePath1 = AppDebugClass.gdsDataString;
 
             PlayerDataClass save0 = new PlayerDataClass();
             GoodsListDataClass save1 = new GoodsListDataClass();
@@ -188,7 +189,7 @@ public class LoadSaveData : MonoBehaviour
                 Debug.LogError("读档失败 " + e.ToString());
 
                 filePath0 = AppDebugClass.pyDataString1;
-                filePath1 = AppDebugClass.wdDataString1;
+                filePath1 = AppDebugClass.gdsDataString1;
 
                 //尝试获取备份存档
                 try
@@ -219,8 +220,6 @@ public class LoadSaveData : MonoBehaviour
         else
         {
             CreateDataSave();
-
-            //LoadByJson();
         }
         isLoadingSaveData = false;
     }
@@ -231,8 +230,10 @@ public class LoadSaveData : MonoBehaviour
     /// <returns></returns>
     private void CreateDataSave()
     {
+        PlayerSaveDataCS.instance.InitPlayerPrefsFun();
+
         string filePath0 = AppDebugClass.pyDataString;
-        string filePath1 = AppDebugClass.wdDataString;
+        string filePath1 = AppDebugClass.gdsDataString;
 
         PlayerDataClass save0 = new PlayerDataClass();
         GoodsListDataClass save1 = new GoodsListDataClass();
@@ -244,18 +245,18 @@ public class LoadSaveData : MonoBehaviour
 
         save1.goodsDataClasses = new System.Collections.Generic.List<GoodsDataClass>();
 
-        for (int i = 0; i < 10; i++)
-        {
-            GoodsDataClass goodsDataClass = new GoodsDataClass();
-            goodsDataClass.goodsId = i;
-            goodsDataClass.goodsNum = 10;
-            goodsDataClass.goodsPrice = 30;
-            goodsDataClass.isExpired = false;
-            goodsDataClass.purchaseTime = TimerControll.nowTimeLong.ToString();
-            goodsDataClass.isArrivaled = true;
-            goodsDataClass.arrivalTime = TimerControll.nowTimeLong.ToString();
-            save1.goodsDataClasses.Add(goodsDataClass);
-        }
+        //for (int i = 0; i < 10; i++)
+        //{
+        //    GoodsDataClass goodsDataClass = new GoodsDataClass();
+        //    goodsDataClass.goodsId = i;
+        //    goodsDataClass.goodsNum = 10;
+        //    goodsDataClass.goodsPrice = 30;
+        //    goodsDataClass.isExpired = false;
+        //    goodsDataClass.purchaseTime = TimerControll.nowTimeLong.ToString();
+        //    goodsDataClass.isArrivaled = true;
+        //    goodsDataClass.arrivalTime = TimerControll.nowTimeLong.ToString();
+        //    save1.goodsDataClasses.Add(goodsDataClass);
+        //}
 
         SetGamePlayerBasicData(save0, save1);
 

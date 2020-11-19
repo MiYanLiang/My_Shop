@@ -7,7 +7,8 @@
 			"ShelfLife": "3.0",
 			"PurchasingPrice": "1.1",
 			"ImageId": "20001",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "1",
@@ -16,7 +17,8 @@
 			"ShelfLife": "4.0",
 			"PurchasingPrice": "3.0",
 			"ImageId": "20002",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "2",
@@ -25,7 +27,8 @@
 			"ShelfLife": "5.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "20003",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "3",
@@ -34,7 +37,8 @@
 			"ShelfLife": "6.0",
 			"PurchasingPrice": "5.0",
 			"ImageId": "20004",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "1"
 		},
 		{
 			"GoodsId": "4",
@@ -43,7 +47,8 @@
 			"ShelfLife": "7.0",
 			"PurchasingPrice": "4.0",
 			"ImageId": "20005",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "1"
 		},
 		{
 			"GoodsId": "5",
@@ -52,7 +57,8 @@
 			"ShelfLife": "8.0",
 			"PurchasingPrice": "1.0",
 			"ImageId": "20006",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "1"
 		},
 		{
 			"GoodsId": "6",
@@ -61,7 +67,8 @@
 			"ShelfLife": "9.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "20007",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "2"
 		},
 		{
 			"GoodsId": "7",
@@ -70,7 +77,8 @@
 			"ShelfLife": "10.0",
 			"PurchasingPrice": "0.5",
 			"ImageId": "20008",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "2"
 		},
 		{
 			"GoodsId": "8",
@@ -79,7 +87,8 @@
 			"ShelfLife": "11.0",
 			"PurchasingPrice": "3.0",
 			"ImageId": "20009",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "2"
 		},
 		{
 			"GoodsId": "9",
@@ -88,7 +97,8 @@
 			"ShelfLife": "12.0",
 			"PurchasingPrice": "2.5",
 			"ImageId": "20010",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "3"
 		},
 		{
 			"GoodsId": "10",
@@ -97,7 +107,8 @@
 			"ShelfLife": "13.0",
 			"PurchasingPrice": "13.0",
 			"ImageId": "20011",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "3"
 		},
 		{
 			"GoodsId": "11",
@@ -106,7 +117,8 @@
 			"ShelfLife": "14.0",
 			"PurchasingPrice": "23.0",
 			"ImageId": "20012",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "3"
 		},
 		{
 			"GoodsId": "12",
@@ -115,7 +127,8 @@
 			"ShelfLife": "15.0",
 			"PurchasingPrice": "1.0",
 			"ImageId": "20013",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "4"
 		},
 		{
 			"GoodsId": "13",
@@ -124,7 +137,8 @@
 			"ShelfLife": "16.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "20014",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "4"
 		},
 		{
 			"GoodsId": "14",
@@ -133,7 +147,8 @@
 			"ShelfLife": "17.0",
 			"PurchasingPrice": "3.0",
 			"ImageId": "20015",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "5"
 		},
 		{
 			"GoodsId": "15",
@@ -142,7 +157,8 @@
 			"ShelfLife": "18.0",
 			"PurchasingPrice": "4.0",
 			"ImageId": "20016",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "5"
 		},
 		{
 			"GoodsId": "16",
@@ -151,7 +167,8 @@
 			"ShelfLife": "19.0",
 			"PurchasingPrice": "6.0",
 			"ImageId": "20017",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "6"
 		},
 		{
 			"GoodsId": "17",
@@ -160,7 +177,8 @@
 			"ShelfLife": "20.0",
 			"PurchasingPrice": "7.0",
 			"ImageId": "20018",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "6"
 		},
 		{
 			"GoodsId": "18",
@@ -169,7 +187,8 @@
 			"ShelfLife": "0.0",
 			"PurchasingPrice": "0.0",
 			"ImageId": "0",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "19",
@@ -178,7 +197,8 @@
 			"ShelfLife": "3.0",
 			"PurchasingPrice": "1.0",
 			"ImageId": "30001",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "20",
@@ -187,7 +207,8 @@
 			"ShelfLife": "4.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "30002",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "21",
@@ -196,7 +217,8 @@
 			"ShelfLife": "5.0",
 			"PurchasingPrice": "3.0",
 			"ImageId": "30003",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "22",
@@ -205,7 +227,8 @@
 			"ShelfLife": "6.0",
 			"PurchasingPrice": "4.0",
 			"ImageId": "30004",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "1"
 		},
 		{
 			"GoodsId": "23",
@@ -214,7 +237,8 @@
 			"ShelfLife": "7.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "30005",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "1"
 		},
 		{
 			"GoodsId": "24",
@@ -223,7 +247,8 @@
 			"ShelfLife": "8.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "30006",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "1"
 		},
 		{
 			"GoodsId": "25",
@@ -232,7 +257,8 @@
 			"ShelfLife": "9.0",
 			"PurchasingPrice": "3.0",
 			"ImageId": "30007",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "2"
 		},
 		{
 			"GoodsId": "26",
@@ -241,7 +267,8 @@
 			"ShelfLife": "10.0",
 			"PurchasingPrice": "3.0",
 			"ImageId": "30008",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "2"
 		},
 		{
 			"GoodsId": "27",
@@ -250,7 +277,8 @@
 			"ShelfLife": "11.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "30009",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "2"
 		},
 		{
 			"GoodsId": "28",
@@ -259,7 +287,8 @@
 			"ShelfLife": "12.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "30010",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "3"
 		},
 		{
 			"GoodsId": "29",
@@ -268,7 +297,8 @@
 			"ShelfLife": "13.0",
 			"PurchasingPrice": "3.0",
 			"ImageId": "30011",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "3"
 		},
 		{
 			"GoodsId": "30",
@@ -277,7 +307,8 @@
 			"ShelfLife": "14.0",
 			"PurchasingPrice": "3.0",
 			"ImageId": "30012",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "3"
 		},
 		{
 			"GoodsId": "31",
@@ -286,7 +317,8 @@
 			"ShelfLife": "15.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "30013",
-			"TypeId": "1"
+			"TypeId": "1",
+			"SalesLevel": "4"
 		},
 		{
 			"GoodsId": "32",
@@ -295,7 +327,8 @@
 			"ShelfLife": "0.0",
 			"PurchasingPrice": "0.0",
 			"ImageId": "0",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "33",
@@ -304,7 +337,8 @@
 			"ShelfLife": "3.0",
 			"PurchasingPrice": "1.0",
 			"ImageId": "40001",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "34",
@@ -313,7 +347,8 @@
 			"ShelfLife": "4.0",
 			"PurchasingPrice": "1.5",
 			"ImageId": "40002",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "35",
@@ -322,7 +357,8 @@
 			"ShelfLife": "5.0",
 			"PurchasingPrice": "0.5",
 			"ImageId": "40003",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "36",
@@ -331,7 +367,8 @@
 			"ShelfLife": "6.0",
 			"PurchasingPrice": "1.0",
 			"ImageId": "40004",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "1"
 		},
 		{
 			"GoodsId": "37",
@@ -340,7 +377,8 @@
 			"ShelfLife": "7.0",
 			"PurchasingPrice": "1.0",
 			"ImageId": "40005",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "1"
 		},
 		{
 			"GoodsId": "38",
@@ -349,7 +387,8 @@
 			"ShelfLife": "8.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "40006",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "1"
 		},
 		{
 			"GoodsId": "39",
@@ -358,7 +397,8 @@
 			"ShelfLife": "9.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "40007",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "2"
 		},
 		{
 			"GoodsId": "40",
@@ -367,7 +407,8 @@
 			"ShelfLife": "10.0",
 			"PurchasingPrice": "1.0",
 			"ImageId": "40008",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "2"
 		},
 		{
 			"GoodsId": "41",
@@ -376,7 +417,8 @@
 			"ShelfLife": "11.0",
 			"PurchasingPrice": "1.0",
 			"ImageId": "40009",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "2"
 		},
 		{
 			"GoodsId": "42",
@@ -385,16 +427,18 @@
 			"ShelfLife": "12.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "40010",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "3"
 		},
 		{
 			"GoodsId": "43",
-			"GoodsName": "娃娃头雪糕",
+			"GoodsName": "小学生",
 			"PurchaseTime": "4.0",
 			"ShelfLife": "13.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "40011",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "3"
 		},
 		{
 			"GoodsId": "44",
@@ -403,7 +447,8 @@
 			"ShelfLife": "14.0",
 			"PurchasingPrice": "1.0",
 			"ImageId": "40012",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "3"
 		},
 		{
 			"GoodsId": "45",
@@ -412,16 +457,18 @@
 			"ShelfLife": "15.0",
 			"PurchasingPrice": "1.0",
 			"ImageId": "40013",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "4"
 		},
 		{
 			"GoodsId": "46",
-			"GoodsName": "摇舌头冰棍",
+			"GoodsName": "摇摇乐",
 			"PurchaseTime": "4.0",
 			"ShelfLife": "16.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "40014",
-			"TypeId": "2"
+			"TypeId": "2",
+			"SalesLevel": "4"
 		},
 		{
 			"GoodsId": "47",
@@ -430,7 +477,8 @@
 			"ShelfLife": "0.0",
 			"PurchasingPrice": "0.0",
 			"ImageId": "0",
-			"TypeId": "0"
+			"TypeId": "0",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "48",
@@ -439,7 +487,8 @@
 			"ShelfLife": "0.0",
 			"PurchasingPrice": "1.0",
 			"ImageId": "50001",
-			"TypeId": "3"
+			"TypeId": "3",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "49",
@@ -448,7 +497,8 @@
 			"ShelfLife": "1.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "50002",
-			"TypeId": "3"
+			"TypeId": "3",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "50",
@@ -457,7 +507,8 @@
 			"ShelfLife": "0.0",
 			"PurchasingPrice": "31.0",
 			"ImageId": "50003",
-			"TypeId": "3"
+			"TypeId": "3",
+			"SalesLevel": "0"
 		},
 		{
 			"GoodsId": "51",
@@ -466,7 +517,8 @@
 			"ShelfLife": "0.0",
 			"PurchasingPrice": "23.0",
 			"ImageId": "50004",
-			"TypeId": "3"
+			"TypeId": "3",
+			"SalesLevel": "1"
 		},
 		{
 			"GoodsId": "52",
@@ -475,7 +527,8 @@
 			"ShelfLife": "0.0",
 			"PurchasingPrice": "22.0",
 			"ImageId": "50005",
-			"TypeId": "3"
+			"TypeId": "3",
+			"SalesLevel": "1"
 		},
 		{
 			"GoodsId": "53",
@@ -484,7 +537,8 @@
 			"ShelfLife": "0.0",
 			"PurchasingPrice": "22.0",
 			"ImageId": "50006",
-			"TypeId": "3"
+			"TypeId": "3",
+			"SalesLevel": "1"
 		},
 		{
 			"GoodsId": "54",
@@ -493,7 +547,8 @@
 			"ShelfLife": "0.0",
 			"PurchasingPrice": "11.0",
 			"ImageId": "50007",
-			"TypeId": "3"
+			"TypeId": "3",
+			"SalesLevel": "2"
 		},
 		{
 			"GoodsId": "55",
@@ -502,7 +557,8 @@
 			"ShelfLife": "0.0",
 			"PurchasingPrice": "3.0",
 			"ImageId": "50008",
-			"TypeId": "3"
+			"TypeId": "3",
+			"SalesLevel": "2"
 		},
 		{
 			"GoodsId": "56",
@@ -511,7 +567,8 @@
 			"ShelfLife": "13.0",
 			"PurchasingPrice": "2.0",
 			"ImageId": "50009",
-			"TypeId": "3"
+			"TypeId": "3",
+			"SalesLevel": "2"
 		},
 		{
 			"GoodsId": "57",
@@ -520,7 +577,8 @@
 			"ShelfLife": "11.0",
 			"PurchasingPrice": "3.0",
 			"ImageId": "50010",
-			"TypeId": "3"
+			"TypeId": "3",
+			"SalesLevel": "3"
 		},
 		{
 			"GoodsId": "58",
@@ -529,7 +587,8 @@
 			"ShelfLife": "22.0",
 			"PurchasingPrice": "4.0",
 			"ImageId": "50011",
-			"TypeId": "3"
+			"TypeId": "3",
+			"SalesLevel": "3"
 		}
 	]
 }

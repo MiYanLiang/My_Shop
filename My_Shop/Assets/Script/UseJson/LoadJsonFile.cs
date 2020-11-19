@@ -11,7 +11,7 @@ public class LoadJsonFile : MonoBehaviour
     //Resources文件夹下
     public static readonly string topFolder = "Jsons/";
     //存放json数据名
-    private static readonly string tableNameStrs = "ShopTable;OTCTable;AwardTable;GoodsTable";
+    private static readonly string tableNameStrs = "ShopTable;OTCTable;AwardTable;GoodsTable;SalesRatioTable";
 
     /// <summary>
     /// 游戏数据库
@@ -61,6 +61,14 @@ public class LoadJsonFile : MonoBehaviour
             gameDataBase.GoodsTable = root.GoodsTable;
             indexTable++;
         }
+        // 加载数据:SalesRatioTable
+        {
+            jsonData = LoadJsonByName(tableNames[indexTable]);
+            root = JsonConvert.DeserializeObject<Roots>(jsonData);
+            gameDataBase.SalesRatioTable = root.SalesRatioTable;
+            indexTable++;
+        }
+
 
         if (indexTable >= tableNames.Length)
         {

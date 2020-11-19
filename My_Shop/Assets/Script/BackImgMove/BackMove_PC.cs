@@ -9,8 +9,12 @@ public class BackMove_PC : MonoBehaviour
     private Vector3 vecPos = Vector3.zero;
     private bool IsNeedMove = false;//是否需要移动
 
+    public static bool isBackMoveNow;   //背景图片是否拖动
+
     void Start()
     {
+        isBackMoveNow = false;
+
         //初始化第一次下落点
         first.x = transform.position.x;
         first.y = transform.position.y;
@@ -34,11 +38,26 @@ public class BackMove_PC : MonoBehaviour
             vecPos = sec - fir;//需要移动的 向量
             first = second;
             IsNeedMove = true;
+
+            if (!UIControllerCS.instance.isOpenBackPack && !isBackMoveNow)
+            {
+                isBackMoveNow = true;
+            }
         }
         else
         {
             IsNeedMove = false;
         }
+
+        if (Event.current.type == EventType.MouseUp)
+        {
+            Invoke("UpdateBackMove", 0.1f);
+        }
+    }
+
+    private void UpdateBackMove()
+    {
+        isBackMoveNow = false;
     }
 
     void Update()

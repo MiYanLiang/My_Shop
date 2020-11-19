@@ -71,7 +71,7 @@ public class TimerControll : MonoBehaviour
 
                     isGetNetworkTime = true;
 
-                    print("当前时间" + GetStrBackTime());
+                    //print("当前时间" + GetStrBackTime());
                 }
                 catch (Exception e)
                 {

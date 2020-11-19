@@ -23,11 +23,47 @@ public class AwardTableItem
 }
 public class GoodsTableItem
 {
+    /// <summary>
+    /// 货物id
+    /// </summary>
     public int GoodsId { get; set; }
+    /// <summary>
+    /// 货物名
+    /// </summary>
     public string GoodsName { get; set; }
+    /// <summary>
+    /// 进货所需时间/分钟
+    /// </summary>
     public float PurchaseTime { get; set; }
+    /// <summary>
+    /// 保质期/分钟
+    /// </summary>
     public float ShelfLife { get; set; }
+    /// <summary>
+    /// 进价
+    /// </summary>
     public float PurchasingPrice { get; set; }
+    /// <summary>
+    /// 图片索引
+    /// </summary>
     public int ImageId { get; set; }
+    /// <summary>
+    /// 货物种类0零食1饮料2冷饮3百货
+    /// </summary>
     public int TypeId { get; set; }
+    /// <summary>
+    /// 解锁销量等级
+    /// </summary>
+    public int SalesLevel { get; set; }
+}
+public class SalesRatioTableItem
+{
+    /// <summary>
+    /// 销售等级
+    /// </summary>
+    public int level { get; set; }
+    /// <summary>
+    /// 销售额
+    /// </summary>
+    public string xse { get; set; }
 }

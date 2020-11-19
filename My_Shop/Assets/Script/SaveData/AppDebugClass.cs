@@ -9,21 +9,21 @@ public class AppDebugClass
 
     //现有存档
     public static readonly string pyDataString = Application.dataPath + "/StreamingAssets/PyDataSave";
-    public static readonly string wdDataString = Application.dataPath + "/StreamingAssets/WdDataSave";
+    public static readonly string gdsDataString = Application.dataPath + "/StreamingAssets/GdsDataSave";
 
     //旧存档
     public static readonly string pyDataString1 = Application.dataPath + "/StreamingAssets/PyDataSave_old";
-    public static readonly string wdDataString1 = Application.dataPath + "/StreamingAssets/WdDataSave_old";
+    public static readonly string gdsDataString1 = Application.dataPath + "/StreamingAssets/GdsDataSave_old";
 
 #elif UNITY_ANDROID  && !UNITY_EDITOR
 
     private static readonly string logFileUrl = Application.persistentDataPath + "/DebugFileV1.0.txt";
 
     public static readonly string pyDataString = Application.persistentDataPath + "/PyDataSave";
-    public static readonly string wdDataString = Application.persistentDataPath + "/WdDataSave";
+    public static readonly string gdsDataString = Application.persistentDataPath + "/GdsDataSave";
 
     public static readonly string pyDataString1 = Application.persistentDataPath + "/PyDataSave_old";
-    public static readonly string wdDataString1 = Application.persistentDataPath + "/WdDataSave_old";
+    public static readonly string gdsDataString1 = Application.persistentDataPath + "/GdsDataSave_old";
 #endif
 
     private static bool enabledLogFile = true;

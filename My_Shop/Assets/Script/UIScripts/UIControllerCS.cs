@@ -87,6 +87,11 @@ public class UIControllerCS : MonoBehaviour
     /// <param name="indexType">0，柜台；1，冰箱；2，冰柜;3，货架；</param>
     public void OpenBackPackOnClick(int indexType)
     {
+        if (BackMove_PC.isBackMoveNow)
+        {
+            return;
+        }
+
         if (isOpenBackPack)
         {
             return;
@@ -97,15 +102,21 @@ public class UIControllerCS : MonoBehaviour
 
         backPackTitleText.text = backPackTitleNameStr[indexType];
 
+        bool isNeedSave = false;
+        //遍历所有背包货物
         for (int i = 0; i < PlayerSaveDataCS.instance.gdsData.goodsDataClasses.Count; i++)
         {
+            //判断是否是当前柜台类型的货物
             if (LoadJsonFile.gameDataBase.GoodsTable[PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].goodsId].TypeId == indexType)
             {
+                //判断是否到货
                 if (!PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].isArrivaled)
                 {
+                    //未到货则刷新是否到货
                     if (long.Parse(PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].arrivalTime) <= TimerControll.nowTimeLong)
                     {
                         PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].isArrivaled = true;
+                        isNeedSave = true;
                     }
                     else
                     {
@@ -118,6 +129,9 @@ public class UIControllerCS : MonoBehaviour
                             PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].goodsNum);
             }
         }
+
+        if (isNeedSave)
+            LoadSaveData.instance.SaveGameData(2);
 
         backPackObj.SetActive(true);
         isOpenBackPack = true;
@@ -173,6 +187,10 @@ public class UIControllerCS : MonoBehaviour
     /// </summary>
     public void OpenMarketToShow(int indexType)
     {
+        if (BackMove_PC.isBackMoveNow)
+        {
+            return;
+        }
         for (int i = 0; i < marketPackObj.transform.childCount; i++)
         {
             Destroy(marketPackObj.transform.GetChild(i).gameObject);
@@ -181,7 +199,7 @@ public class UIControllerCS : MonoBehaviour
         {
             if (indexType == i)
             {
-                marketTitleBtnsObj.transform.GetChild(i).transform.localScale = new Vector3(1.5f, 1.5f);
+                marketTitleBtnsObj.transform.GetChild(i).transform.localScale = new Vector3(1.2f, 1.2f);
             }
             else
             {
@@ -191,13 +209,17 @@ public class UIControllerCS : MonoBehaviour
 
         for (int i = 0; i < LoadJsonFile.gameDataBase.GoodsTable.Count; i++)
         {
-            if (LoadJsonFile.gameDataBase.GoodsTable[i].GoodsName != "" && LoadJsonFile.gameDataBase.GoodsTable[i].TypeId == indexType)
+                //货物不为空
+            if (LoadJsonFile.gameDataBase.GoodsTable[i].GoodsName != "" && 
+                //是否是该种类货物
+                LoadJsonFile.gameDataBase.GoodsTable[i].TypeId == indexType && 
+                //销售等级是否可以解锁该货物
+                PlayerSaveDataCS.instance.goodsSalesLevel[indexType] >= LoadJsonFile.gameDataBase.GoodsTable[i].SalesLevel)
             {
                 int goodsId = i;
                 ShowOneGoodsForMarket(goodsId);
             }
         }
-
         marketWinObj.SetActive(true);
         isOpenBackPack = true;
     }
@@ -208,13 +230,12 @@ public class UIControllerCS : MonoBehaviour
     /// <param name="goodsId">货物id</param>
     private void ShowOneGoodsForMarket(int goodsId)
     {
-
         GameObject obj = Instantiate(goodsObj, marketPackObj.transform);
         obj.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load("Image/InventoryImg/" + LoadJsonFile.gameDataBase.GoodsTable[goodsId].ImageId, typeof(Sprite)) as Sprite;
         obj.GetComponentInChildren<Text>().text = LoadJsonFile.gameDataBase.GoodsTable[goodsId].PurchasingPrice + "￥";
         obj.GetComponentInChildren<Button>().onClick.AddListener(delegate ()
         {
-            Debug.Log("goodsId: " + goodsId);
+            print("goodsId: " + goodsId);
             goodsInfoMarketText.text = LoadJsonFile.gameDataBase.GoodsTable[goodsId].GoodsName;
             choosedNums = 1;
             choosedGoodsIndex = goodsId;
@@ -339,12 +360,16 @@ public class UIControllerCS : MonoBehaviour
             GoodsDataClass goodsDataClass = new GoodsDataClass();
             goodsDataClass.goodsId = choosedGoodsIndex;
             goodsDataClass.goodsNum = choosedNums;
-            goodsDataClass.goodsPrice = LoadJsonFile.gameDataBase.GoodsTable[choosedGoodsIndex].PurchasingPrice;
+            goodsDataClass.goodsPrice = LoadJsonFile.gameDataBase.GoodsTable[choosedGoodsIndex].PurchasingPrice * 2;
             goodsDataClass.isExpired = false;
             goodsDataClass.purchaseTime = nowTimeLong.ToString();
             goodsDataClass.isArrivaled = false;
             goodsDataClass.arrivalTime = arrivalTimeLong.ToString();
             PlayerSaveDataCS.instance.gdsData.goodsDataClasses.Add(goodsDataClass);
+            LoadSaveData.instance.SaveGameData(2);
+
+            //添加该类货物的销量
+            PlayerSaveDataCS.instance.SetSalesVolume((GoodsTypeEnum)LoadJsonFile.gameDataBase.GoodsTable[choosedGoodsIndex].TypeId, choosedNums);
 
             string purchaseRecordStr = "{0}月{1}日 采购:{2}✖{3} 预计{4}到货;";
             DateTime dateTime_Now = TimerControll.GetStrBackTime();
@@ -372,6 +397,7 @@ public class UIControllerCS : MonoBehaviour
         {
             PlayerSaveDataCS.instance.pyData.money -= moneyNum;
         }
+        LoadSaveData.instance.SaveGameData(1);
         goldNumText.text = PlayerSaveDataCS.instance.pyData.money.ToString();
     }
 
@@ -389,6 +415,10 @@ public class UIControllerCS : MonoBehaviour
     /// </summary>
     public void OpenZhangBenObjToShow()
     {
+        if (BackMove_PC.isBackMoveNow)
+        {
+            return;
+        }
         if (isOpenBackPack)
         {
             return;

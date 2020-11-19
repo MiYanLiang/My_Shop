@@ -24,11 +24,22 @@ public static class ColorDataStatic
 /// <summary>
 /// 货物类型
 /// </summary>
-public enum MarketWoodsType
+public enum GoodsTypeEnum
 {
-    lingShi,
-    yinLiao,
-    xueGao,
-    baiHuo,
-    jiangChi
+    /// <summary>
+    /// 零食
+    /// </summary>
+    LINGSHI = 0,
+    /// <summary>
+    /// 饮料
+    /// </summary>
+    YINLIAO = 1,
+    /// <summary>
+    /// 雪糕
+    /// </summary>
+    XUEGAO = 2,
+    /// <summary>
+    /// 百货
+    /// </summary>
+    BAIHUO = 3
 }
