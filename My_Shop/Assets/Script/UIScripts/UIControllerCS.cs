@@ -70,15 +70,88 @@ public class UIControllerCS : MonoBehaviour
     {
         LoadSaveData.instance.LoadByJson();
 
-        InitUIForGameData();
+        InitUIForGame();
     }
 
-    private void InitUIForGameData()
+    private void InitUIForGame()
     {
         //playerNameText.text = PlayerSaveDataCS.instance.pyData.playerName;
         //shopNameText.text = PlayerSaveDataCS.instance.pyData.shopName;
         goldNumText.text = PlayerSaveDataCS.instance.pyData.money.ToString();
         levelText.text = PlayerSaveDataCS.instance.pyData.level.ToString();
+
+        detaildAvatarImg = detaildWinObj.transform.GetChild(0).GetChild(0).GetComponent<Image>();
+        detaildNameText = detaildWinObj.transform.GetChild(1).GetComponent<Text>();
+        detaildSpecialText = detaildWinObj.transform.GetChild(2).GetComponent<Text>();
+        detaildInfoText = detaildWinObj.transform.GetChild(3).GetComponent<Text>();
+        detaildShelfLifeText = detaildWinObj.transform.GetChild(4).GetComponent<Text>();
+        detaildPurchasePText = detaildWinObj.transform.GetChild(5).GetComponent<Text>();
+        detaildSellingP = detaildWinObj.transform.GetChild(6).GetChild(0).GetComponent<InputField>();
+        detaildConfirmBtn = detaildWinObj.transform.GetChild(7).GetComponent<Button>();
+        detaildConfirmBtn.onClick.AddListener(CloseDetaildWinOnClick);
+        detaildThrowAwayBtn = detaildWinObj.transform.GetChild(8).GetComponent<Button>();
+    }
+
+    [SerializeField]
+    GameObject goodsInfoBtn;    //货物详情btn的obj
+
+    private int chooseBackPackGoodsId;  //记录背包里选择的物品id
+    private GameObject goodsSelectImgObj;  //记录背包里选择的物品Obj
+
+    [SerializeField]
+    GameObject detaildWinObj;   //货物详情WinObj
+    private Image detaildAvatarImg;     //货物详情中的头像Img
+    private Text detaildNameText;       //货物详情中的货物名
+    private Text detaildSpecialText;    //货物详情中的特殊货物名
+    private Text detaildInfoText;       //货物详情中的详细介绍
+    private Text detaildShelfLifeText;  //货物详情中的保质期内容
+    private Text detaildPurchasePText;  //货物详情中的进价
+    private InputField detaildSellingP; //货物详情中的售价
+    private Button detaildConfirmBtn;   //货物详情中的确认按钮
+    private Button detaildThrowAwayBtn; //货物详情中的丢弃按钮
+
+    /// <summary>
+    /// 打开物品详情窗口
+    /// </summary>
+    public void OpenDetaildWinOnClick()
+    {
+        detaildAvatarImg.sprite = Resources.Load("Image/InventoryImg/" + LoadJsonFile.gameDataBase.GoodsTable[chooseBackPackGoodsId].ImageId, typeof(Sprite)) as Sprite;
+        detaildNameText.text = LoadJsonFile.gameDataBase.GoodsTable[chooseBackPackGoodsId].GoodsName;
+        detaildSpecialText.text = "特描";
+        detaildInfoText.text = "详介";
+
+        int goodsNums = 0;
+        for (int i = 0; i < PlayerSaveDataCS.instance.gdsDataForGame[chooseBackPackGoodsId].Count; i++)
+        {
+            if (PlayerSaveDataCS.instance.gdsDataForGame[chooseBackPackGoodsId][i].isArrivaled)
+            {
+                goodsNums += PlayerSaveDataCS.instance.gdsDataForGame[chooseBackPackGoodsId][i].goodsNum;
+            }
+        }
+        detaildShelfLifeText.text = "数量: " + goodsNums + "\n保质期: " + LoadJsonFile.gameDataBase.GoodsTable[chooseBackPackGoodsId].ShelfLife + "分钟";
+
+        detaildPurchasePText.text = "进价: " + LoadJsonFile.gameDataBase.GoodsTable[chooseBackPackGoodsId].PurchasingPrice + "￥";
+
+        detaildSellingP.text = PlayerSaveDataCS.instance.gdsDataForGame[chooseBackPackGoodsId][0].goodsPrice.ToString();
+
+        detaildWinObj.SetActive(true);
+    }
+
+    /// <summary>
+    /// 确认后关闭物品详情窗口
+    /// </summary>
+    private void CloseDetaildWinOnClick()
+    {
+        float sellPrice = float.Parse(detaildSellingP.text);
+        if (sellPrice!= PlayerSaveDataCS.instance.gdsDataForGame[chooseBackPackGoodsId][0].goodsPrice)
+        {
+            for (int i = 0; i < PlayerSaveDataCS.instance.gdsDataForGame[chooseBackPackGoodsId].Count; i++)
+            {
+                PlayerSaveDataCS.instance.gdsDataForGame[chooseBackPackGoodsId][i].goodsPrice = sellPrice;
+            }
+            LoadSaveData.instance.SaveGameData(2);
+        }
+        detaildWinObj.SetActive(false);
     }
 
     /// <summary>
@@ -91,7 +164,6 @@ public class UIControllerCS : MonoBehaviour
         {
             return;
         }
-
         if (isOpenBackPack)
         {
             return;
@@ -99,37 +171,49 @@ public class UIControllerCS : MonoBehaviour
 
         //打开任意一个柜台后详细描述重置
         goodsInfoBackPackText.text = "暂无描述";
+        goodsInfoBtn.SetActive(false);
+        chooseBackPackGoodsId = -1;
+        goodsSelectImgObj = null;
 
         backPackTitleText.text = backPackTitleNameStr[indexType];
-
         bool isNeedSave = false;
-        //遍历所有背包货物
-        for (int i = 0; i < PlayerSaveDataCS.instance.gdsData.goodsDataClasses.Count; i++)
+        //遍历背包所有id的货物
+        for (int i = 0; i < PlayerSaveDataCS.instance.gdsDataForGame.Count; i++)
         {
-            //判断是否是当前柜台类型的货物
-            if (LoadJsonFile.gameDataBase.GoodsTable[PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].goodsId].TypeId == indexType)
+            //该id是否有货物
+            if (PlayerSaveDataCS.instance.gdsDataForGame[i].Count > 0)
             {
-                //判断是否到货
-                if (!PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].isArrivaled)
+                //判断是否是当前柜台类型的货物
+                if (LoadJsonFile.gameDataBase.GoodsTable[PlayerSaveDataCS.instance.gdsDataForGame[i][0].goodsId].TypeId == indexType)
                 {
-                    //未到货则刷新是否到货
-                    if (long.Parse(PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].arrivalTime) <= TimerControll.nowTimeLong)
+                    int arrivaledNum = 0;   //记录总共到货的数量
+                    for (int j = 0; j < PlayerSaveDataCS.instance.gdsDataForGame[i].Count; j++)
                     {
-                        PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].isArrivaled = true;
-                        isNeedSave = true;
+                        //判断是否到货
+                        if (!PlayerSaveDataCS.instance.gdsDataForGame[i][j].isArrivaled)
+                        {
+                            //未到货则刷新是否到货
+                            if (long.Parse(PlayerSaveDataCS.instance.gdsDataForGame[i][j].arrivalTime) <= TimerControll.nowTimeLong)
+                            {
+                                PlayerSaveDataCS.instance.gdsDataForGame[i][j].isArrivaled = true;
+                                isNeedSave = true;
+                            }
+                            else
+                            {
+                                continue;
+                            }
+                        }
+                        arrivaledNum += PlayerSaveDataCS.instance.gdsDataForGame[i][j].goodsNum;
                     }
-                    else
+                    //有到货的货物
+                    if (arrivaledNum > 0)
                     {
-                        continue;
+                        int indexGoodId = i;
+                        ShowOneGoodsForBackPack(indexGoodId, arrivaledNum);
                     }
                 }
-                ShowOneGoodsForBackPack(
-                            LoadJsonFile.gameDataBase.GoodsTable[PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].goodsId].GoodsName,
-                            LoadJsonFile.gameDataBase.GoodsTable[PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].goodsId].ImageId,
-                            PlayerSaveDataCS.instance.gdsData.goodsDataClasses[i].goodsNum);
             }
         }
-
         if (isNeedSave)
             LoadSaveData.instance.SaveGameData(2);
 
@@ -143,14 +227,17 @@ public class UIControllerCS : MonoBehaviour
     /// <param name="goodsName">货物名</param>
     /// <param name="goodsImgId">图片id</param>
     /// <param name="num">拥有数量</param>
-    private void ShowOneGoodsForBackPack(string goodsName, int goodsImgId, float num)
+    private void ShowOneGoodsForBackPack(int goodsId, int goodsNum)
     {
         GameObject obj = Instantiate(goodsObj, backPackContentObj.transform);
-        obj.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load("Image/InventoryImg/" + goodsImgId, typeof(Sprite)) as Sprite;
-        obj.GetComponentInChildren<Text>().text = num.ToString();
+        obj.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load("Image/InventoryImg/" + LoadJsonFile.gameDataBase.GoodsTable[goodsId].ImageId, typeof(Sprite)) as Sprite;
+        obj.GetComponentInChildren<Text>().text = goodsNum + "个";
         obj.GetComponentInChildren<Button>().onClick.AddListener(delegate ()
         {
-            goodsInfoBackPackText.text = goodsName;
+            ChangeGoodsSelectImgFun(obj);
+            chooseBackPackGoodsId = goodsId;
+            goodsInfoBackPackText.text = LoadJsonFile.gameDataBase.GoodsTable[goodsId].GoodsName;
+            goodsInfoBtn.SetActive(true);
         });
     }
 
@@ -236,6 +323,7 @@ public class UIControllerCS : MonoBehaviour
         obj.GetComponentInChildren<Button>().onClick.AddListener(delegate ()
         {
             print("goodsId: " + goodsId);
+            ChangeGoodsSelectImgFun(obj);
             goodsInfoMarketText.text = LoadJsonFile.gameDataBase.GoodsTable[goodsId].GoodsName;
             choosedNums = 1;
             choosedGoodsIndex = goodsId;
@@ -260,6 +348,20 @@ public class UIControllerCS : MonoBehaviour
         buyNumsObj.SetActive(false);
         marketWinObj.SetActive(false);
         isOpenBackPack = false;
+    }
+
+    /// <summary>
+    /// 改变货物选择图片的展示
+    /// </summary>
+    /// <param name="goodsObj"></param>
+    private void ChangeGoodsSelectImgFun(GameObject goodsObj)
+    {
+        if (goodsSelectImgObj != null)
+        {
+            goodsSelectImgObj.SetActive(false);
+        }
+        goodsSelectImgObj = goodsObj.transform.GetChild(3).gameObject;
+        goodsSelectImgObj.SetActive(true);
     }
 
     [SerializeField]
@@ -366,6 +468,7 @@ public class UIControllerCS : MonoBehaviour
             goodsDataClass.isArrivaled = false;
             goodsDataClass.arrivalTime = arrivalTimeLong.ToString();
             PlayerSaveDataCS.instance.gdsData.goodsDataClasses.Add(goodsDataClass);
+            PlayerSaveDataCS.instance.gdsDataForGame[goodsDataClass.goodsId].Add(goodsDataClass);
             LoadSaveData.instance.SaveGameData(2);
 
             //添加该类货物的销量

@@ -17,6 +17,11 @@ public class PlayerSaveDataCS : MonoBehaviour
     public GoodsListDataClass gdsData = new GoodsListDataClass();
 
     /// <summary>
+    /// 货物数据类for游戏，重合数据
+    /// </summary>
+    public List<List<GoodsDataClass>> gdsDataForGame = new List<List<GoodsDataClass>>();
+
+    /// <summary>
     /// 玩家数据类
     /// </summary>
     public PlayerDataClass pyData = new PlayerDataClass();
@@ -42,6 +47,23 @@ public class PlayerSaveDataCS : MonoBehaviour
     private void Start()
     {
         InitSalesLevel();
+    }
+
+    /// <summary>
+    /// 初始化货物重合数据
+    /// </summary>
+    public void InitGdsDataForGame()
+    {
+        for (int i = 0; i < LoadJsonFile.gameDataBase.GoodsTable.Count; i++)
+        {
+            List<GoodsDataClass> goodsDataClasses = new List<GoodsDataClass>();
+            gdsDataForGame.Add(goodsDataClasses);
+        }
+
+        for (int i = 0; i < gdsData.goodsDataClasses.Count; i++)
+        {
+            gdsDataForGame[gdsData.goodsDataClasses[i].goodsId].Add(gdsData.goodsDataClasses[i]);
+        }
     }
 
     /// <summary>

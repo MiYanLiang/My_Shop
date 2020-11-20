@@ -139,3 +139,594 @@ UnityEngine.MonoBehaviour:print(Object)
 LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
 UIControllerCS:OpenBackPackOnClick(Int32) (at Assets/Script/UIScripts/UIControllerCS.cs:134)
 UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:14:10__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 13:14:10__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:14:10__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:14:12__DebugLog__删除存档
+UnityEngine.Debug:Log(Object)
+LoadSaveData:DeleteAllSaveData() (at Assets/Script/SaveData/LoadSaveData.cs:59)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:14:12__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 13:14:12__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 13:14:12__DebugLog__存档成功: 0
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:263)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:222)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:14:12__DebugLog__存档成功: 0
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:263)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:222)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:14:12__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:266)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:222)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:14:12__DebugLog__初创存档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:CreateDataSave() (at Assets/Script/SaveData/LoadSaveData.cs:266)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:222)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:14:15__DebugException__UnassignedReferenceException: The variable goodsInfoBtn of UIControllerCS has not been assigned.
+You probably need to assign the goodsInfoBtn variable of the UIControllerCS script in the inspector.
+UIControllerCS.OpenBackPackOnClick (System.Int32 indexType) (at Assets/Script/UIScripts/UIControllerCS.cs:105)
+UnityEngine.Events.InvokableCall`1[T1].Invoke (T1 args0) (at D:/unity/Runtime/Export/UnityEvent/UnityEvent.cs:207)
+UnityEngine.Events.CachedInvokableCall`1[T].Invoke (System.Object[] args) (at D:/unity/Runtime/Export/UnityEvent/UnityEvent.cs:345)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent/UnityEvent/UnityEvent_0.cs:70)
+UnityEngine.UI.Button.Press () (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs:68)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs:110)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:14:15__DebugException__UnassignedReferenceException: The variable goodsInfoBtn of UIControllerCS has not been assigned.
+You probably need to assign the goodsInfoBtn variable of the UIControllerCS script in the inspector.
+UIControllerCS.OpenBackPackOnClick (System.Int32 indexType) (at Assets/Script/UIScripts/UIControllerCS.cs:105)
+UnityEngine.Events.InvokableCall`1[T1].Invoke (T1 args0) (at D:/unity/Runtime/Export/UnityEvent/UnityEvent.cs:207)
+UnityEngine.Events.CachedInvokableCall`1[T].Invoke (System.Object[] args) (at D:/unity/Runtime/Export/UnityEvent/UnityEvent.cs:345)
+UnityEngine.Events.UnityEvent.Invoke () (at D:/unity/Runtime/Export/UnityEvent/UnityEvent/UnityEvent_0.cs:70)
+UnityEngine.UI.Button.Press () (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs:68)
+UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs:110)
+UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs:50)
+UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) (at F:/Unity/2019.2.3f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs:261)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:14:45__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 13:14:45__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:14:45__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:14:53__DebugLog__goodsId: 0
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass25_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:254)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:14:57__DebugLog__存档成功: 1
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:ChangeMoneyNum(Boolean, Single) (at Assets/Script/UIScripts/UIControllerCS.cs:417)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:369)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:14:57__DebugLog__存档成功: 2
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:386)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:14:57__DebugLog__真好，钱够
+UnityEngine.Debug:Log(Object)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:398)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:16:23__DebugLog__存档成功: 2
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:OpenBackPackOnClick(Int32) (at Assets/Script/UIScripts/UIControllerCS.cs:150)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:17:28__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 13:17:28__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:17:28__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:38:57__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 13:38:57__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:38:57__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:39:01__DebugLog__goodsId: 0
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:39:04__DebugLog__goodsId: 1
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:39:06__DebugLog__存档成功: 1
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:ChangeMoneyNum(Boolean, Single) (at Assets/Script/UIScripts/UIControllerCS.cs:435)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:387)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:39:06__DebugLog__存档成功: 2
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:404)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:39:06__DebugLog__真好，钱够
+UnityEngine.Debug:Log(Object)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:416)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:39:07__DebugLog__goodsId: 2
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:39:08__DebugLog__存档成功: 1
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:ChangeMoneyNum(Boolean, Single) (at Assets/Script/UIScripts/UIControllerCS.cs:435)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:387)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:39:08__DebugLog__存档成功: 2
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:404)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:39:08__DebugLog__真好，钱够
+UnityEngine.Debug:Log(Object)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:416)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:39:57__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 13:39:57__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:39:57__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:40:54__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 13:40:54__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:40:54__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:40:55__DebugLog__存档成功: 2
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:OpenBackPackOnClick(Int32) (at Assets/Script/UIScripts/UIControllerCS.cs:151)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:42:33__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 13:42:33__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:42:33__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 13:42:48__DebugLog__goodsId: 0
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:42:49__DebugLog__goodsId: 1
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:42:50__DebugLog__goodsId: 2
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:42:53__DebugLog__goodsId: 19
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:42:53__DebugLog__goodsId: 20
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:42:54__DebugLog__goodsId: 21
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:42:58__DebugLog__goodsId: 21
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:42:59__DebugLog__goodsId: 20
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:42:59__DebugLog__goodsId: 19
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:00__DebugLog__goodsId: 20
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:03__DebugLog__goodsId: 21
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:04__DebugLog__goodsId: 20
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:04__DebugLog__goodsId: 19
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:06__DebugLog__goodsId: 35
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:06__DebugLog__goodsId: 34
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:09__DebugLog__goodsId: 50
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:10__DebugLog__goodsId: 49
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:10__DebugLog__goodsId: 48
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:11__DebugLog__goodsId: 49
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:12__DebugLog__goodsId: 50
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:12__DebugLog__goodsId: 49
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:13__DebugLog__goodsId: 48
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:14__DebugLog__goodsId: 0
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:15__DebugLog__goodsId: 1
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 13:43:15__DebugLog__goodsId: 2
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass28_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:272)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:32:25__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 14:32:25__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 14:32:25__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 14:33:30__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 14:33:30__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 14:33:30__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 14:34:25__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 14:34:26__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 14:34:26__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 14:35:56__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 14:35:56__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 14:35:56__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 14:36:13__DebugLog__存档成功: 2
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:CloseDetaildWinOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:152)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:36:32__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 14:36:32__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 14:36:32__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 14:37:07__DebugLog__存档成功: 2
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:CloseDetaildWinOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:152)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:16__DebugLog__所有Json数据加载成功。
+UnityEngine.Debug:Log(Object)
+LoadJsonFile:JsonDataToSheets(String[]) (at Assets/Script/UseJson/LoadJsonFile.cs:75)
+LoadJsonFile:Awake() (at Assets/Script/UseJson/LoadJsonFile.cs:136)
+
+2020/11/20 14:37:16__DebugLog__读档成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:182)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 14:37:16__DebugLog__存档备份成功
+UnityEngine.Debug:Log(Object)
+LoadSaveData:BackupArchiveForGame(String, String) (at Assets/Script/SaveData/LoadSaveData.cs:146)
+LoadSaveData:LoadByJson() (at Assets/Script/SaveData/LoadSaveData.cs:185)
+UIControllerCS:Start() (at Assets/Script/UIScripts/UIControllerCS.cs:71)
+
+2020/11/20 14:37:33__DebugLog__goodsId: 2
+UnityEngine.MonoBehaviour:print(Object)
+<>c__DisplayClass39_0:<ShowOneGoodsForMarket>b__0() (at Assets/Script/UIScripts/UIControllerCS.cs:325)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:34__DebugLog__存档成功: 1
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:ChangeMoneyNum(Boolean, Single) (at Assets/Script/UIScripts/UIControllerCS.cs:503)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:455)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:34__DebugLog__存档成功: 2
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:472)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:34__DebugLog__真好，钱够
+UnityEngine.Debug:Log(Object)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:484)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:34__DebugLog__存档成功: 1
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:ChangeMoneyNum(Boolean, Single) (at Assets/Script/UIScripts/UIControllerCS.cs:503)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:455)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:34__DebugLog__存档成功: 2
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:472)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:34__DebugLog__真好，钱够
+UnityEngine.Debug:Log(Object)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:484)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:34__DebugLog__存档成功: 1
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:ChangeMoneyNum(Boolean, Single) (at Assets/Script/UIScripts/UIControllerCS.cs:503)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:455)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:34__DebugLog__存档成功: 2
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:472)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:34__DebugLog__真好，钱够
+UnityEngine.Debug:Log(Object)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:484)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:34__DebugLog__存档成功: 1
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:ChangeMoneyNum(Boolean, Single) (at Assets/Script/UIScripts/UIControllerCS.cs:503)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:455)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:34__DebugLog__存档成功: 2
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:472)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:34__DebugLog__真好，钱够
+UnityEngine.Debug:Log(Object)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:484)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:35__DebugLog__存档成功: 1
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:ChangeMoneyNum(Boolean, Single) (at Assets/Script/UIScripts/UIControllerCS.cs:503)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:455)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:35__DebugLog__存档成功: 2
+UnityEngine.MonoBehaviour:print(Object)
+LoadSaveData:SaveGameData(Int32) (at Assets/Script/SaveData/LoadSaveData.cs:128)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:472)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2020/11/20 14:37:35__DebugLog__真好，钱够
+UnityEngine.Debug:Log(Object)
+UIControllerCS:PayMoneyOnClick() (at Assets/Script/UIScripts/UIControllerCS.cs:484)
+UnityEngine.EventSystems.EventSystem:Update()

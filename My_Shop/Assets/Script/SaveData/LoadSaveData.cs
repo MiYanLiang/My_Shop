@@ -274,6 +274,7 @@ public class LoadSaveData : MonoBehaviour
     {
         PlayerSaveDataCS.instance.pyData = save;
         PlayerSaveDataCS.instance.gdsData = save1;
+        PlayerSaveDataCS.instance.InitGdsDataForGame();
     }
 
     /// <summary>

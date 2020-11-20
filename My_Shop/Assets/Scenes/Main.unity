@@ -2972,6 +2972,8 @@ MonoBehaviour:
   shopNameText: {fileID: 1794412464}
   goldNumText: {fileID: 1884154372}
   levelText: {fileID: 1653854746}
+  goodsInfoBtn: {fileID: 848868169}
+  detaildWinObj: {fileID: 1529130455}
   marketWinObj: {fileID: 1581069675}
   marketPackObj: {fileID: 786810019}
   goodsObj: {fileID: 2275660129919402492, guid: fb6c6f109271ed34faef9b66598e99f5,
@@ -3170,8 +3172,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -125.6, y: 0}
-  m_SizeDelta: {x: -498, y: 0}
+  m_AnchoredPosition: {x: -101.91, y: 0}
+  m_SizeDelta: {x: -450.61, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &767294844
 MonoBehaviour:
@@ -3215,14 +3217,14 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 767294845}
   m_TextComponent: {fileID: 1108822230}
   m_Placeholder: {fileID: 483775553}
-  m_ContentType: 0
+  m_ContentType: 3
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 2
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
-  m_CharacterLimit: 0
+  m_CharacterValidation: 2
+  m_CharacterLimit: 9
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -3792,7 +3794,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 848868172}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 746299113}
+        m_MethodName: OpenDetaildWinOnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &848868172
@@ -4986,7 +4999,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1082330038}
   m_OnClick:
     m_PersistentCalls:
@@ -5287,7 +5300,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 251.43, y: 192.59998}
+  m_AnchoredPosition: {x: 251.42969, y: 192.59998}
   m_SizeDelta: {x: 200.4, y: 96.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1115671306
