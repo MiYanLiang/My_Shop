@@ -47,10 +47,18 @@ public class UIControllerCS : MonoBehaviour
             instance = this;
         }
 
+    }
+
+    private void Start()
+    {
+        LoadSaveData.instance.LoadByJson();
+
         InitUIForGameProp();
     }
 
-    //初始化相关内容
+    /// <summary>
+    /// 初始化相关内容
+    /// </summary>
     private void InitUIForGameProp()
     {
         isOpenBackPack = false;
@@ -64,17 +72,7 @@ public class UIControllerCS : MonoBehaviour
                 OpenMarketToShow(index);
             });
         }
-    }
 
-    private void Start()
-    {
-        LoadSaveData.instance.LoadByJson();
-
-        InitUIForGame();
-    }
-
-    private void InitUIForGame()
-    {
         //playerNameText.text = PlayerSaveDataCS.instance.pyData.playerName;
         //shopNameText.text = PlayerSaveDataCS.instance.pyData.shopName;
         goldNumText.text = PlayerSaveDataCS.instance.pyData.money.ToString();
@@ -570,7 +568,6 @@ public class UIControllerCS : MonoBehaviour
             zhangBenViewObj.SetActive(true);
         }
     }
-
 
     [SerializeField]
     GameObject catLevelObj;  //猫咪升级面板
